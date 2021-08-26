@@ -6,4 +6,4 @@ export default {
   component: Nav,
 };
 
-export const Primary = () => <Nav />;
+export const Mobile = () => <Nav />;
