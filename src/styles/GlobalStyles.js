@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     --n900: #091E42;
     --n50a: rgba(9,30,66,0.25);
     --n60a: rgba(9,30,66,0.31);
+    --n800a: rgba(9,30,66,0.95);
   }
 
   html {
