@@ -7,6 +7,7 @@ const StyledBlanket = styled.div`
   left: 0;
   right: 0;
   background-color: var(--n800a);
+  overflow-y: scroll;
 `;
 
 export { StyledBlanket };
