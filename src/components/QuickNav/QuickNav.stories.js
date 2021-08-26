@@ -6,4 +6,7 @@ export default {
   component: QuickNav,
 };
 
-export const Mobile = () => <QuickNav />;
+export const Mobile = (args) => <QuickNav {...args} />;
+Mobile.args = {
+  section: 'Quienes somos',
+};

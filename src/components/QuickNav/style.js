@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
 const StyledQuickNav = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: var(--b500);
   color: var(--n0);
   padding: 2.4rem 1.6rem;
+`;
+
+const StyledQuickNavHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
 `;
 
@@ -17,6 +20,28 @@ const StyledQuickNavTitle = styled.h3`
   font-weight: normal;
 `;
 
+const StyledQuickNavList = styled.ul`
+  list-style: none;
+  margin: 3.2rem 0 0;
+  padding: 0 0 0 0.8rem;
+`;
+
+const StyledQuickNavLinks = styled.li`
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 const StyledIcon = styled.i``;
 
-export { StyledQuickNav, StyledQuickNavTitle, StyledIcon };
+export {
+  StyledQuickNav,
+  StyledQuickNavHeader,
+  StyledQuickNavTitle,
+  StyledQuickNavList,
+  StyledQuickNavLinks,
+  StyledIcon,
+};
