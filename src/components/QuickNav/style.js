@@ -24,6 +24,11 @@ const StyledQuickNavList = styled.ul`
   list-style: none;
   margin: 3.2rem 0 0;
   padding: 0 0 0 0.8rem;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    gap: 3.2rem;
+  }
 `;
 
 const StyledQuickNavLinks = styled.li`
