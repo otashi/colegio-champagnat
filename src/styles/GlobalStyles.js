@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
   :root {
     --b400: #0052cc;
+    --b500: #0747A6;
     --n0: #ffffff;
     --n10: #FAFBFC;
     --n900: #091E42;
