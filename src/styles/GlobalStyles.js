@@ -32,10 +32,13 @@ const GlobalStyles = createGlobalStyle`
   li {
     font-size: 1.4rem;
     line-height: 2rem;
+    padding: 0;
+    margin: 0;
   }
 
   body {
     margin: 0;
+    padding: 0;
     -webkit-font-smoothing: antialiased;
   }
 `;
