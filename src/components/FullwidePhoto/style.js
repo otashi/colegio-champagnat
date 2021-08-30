@@ -8,6 +8,7 @@ const StyledFullwidePhoto = styled.div`
   width: 100vw;
   height: 62vw;
   max-width: 1026px;
+  max-height: 634px;
 `;
 
 export { StyledFullwidePhoto };
