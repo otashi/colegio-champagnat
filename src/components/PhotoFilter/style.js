@@ -1,13 +1,5 @@
 import styled from 'styled-components';
 
-const StyledPhotoContainer = styled.div`
-  position: relative;
-  width: 100vw;
-  height: 62vw;
-  max-width: 1026px;
-  max-height: 634px;
-`;
-
 const StyledPhotoFilter = styled.div`
   position: absolute;
   top: 0;
@@ -17,4 +9,4 @@ const StyledPhotoFilter = styled.div`
   background-color: var(--n70a);
 `;
 
-export { StyledPhotoContainer, StyledPhotoFilter };
+export { StyledPhotoFilter };

@@ -1,13 +1,8 @@
 import React from 'react';
-import { StyledPhotoContainer, StyledPhotoFilter } from './style';
+import { StyledPhotoFilter } from './style';
 
-const PhotoFilter = ({ children }) => {
-  return (
-    <StyledPhotoContainer>
-      <StyledPhotoFilter />
-      {children}
-    </StyledPhotoContainer>
-  );
+const PhotoFilter = () => {
+  return <StyledPhotoFilter />;
 };
 
 export { PhotoFilter };
