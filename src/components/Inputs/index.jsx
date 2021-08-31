@@ -6,6 +6,8 @@ import {
   StyledTextInput,
   StyledTextAreaInput,
   StyledSelectInput,
+  StyledRadioInput,
+  StyledRadioGroup,
 } from './style';
 
 const TextInput = ({ name, label, placeholder, required }) => {
@@ -52,12 +54,36 @@ const SelectInput = ({ name, label, placeholder, options, required }) => {
       </StyledLabel>
       <StyledSelectInput name={name} id={name}>
         <option value=''>{placeholder}</option>
-        {options.map((option) => (
-          <option value={option}>{option}</option>
+        {options.map((option, index) => (
+          <option value={option} key={index}>
+            {option}
+          </option>
         ))}
       </StyledSelectInput>
     </StyledInputContainer>
   );
 };
 
-export { TextInput, TextAreaInput, SelectInput };
+const RadioInput = ({ name, label, options, required }) => {
+  return (
+    <StyledInputContainer>
+      <StyledLabel>
+        {label}
+        {required && <StyledRequired>*</StyledRequired>}
+      </StyledLabel>
+      {options.map((option, index) => (
+        <StyledRadioGroup key={index}>
+          <StyledRadioInput
+            type='radio'
+            id={option}
+            name={name}
+            value={option}
+          />
+          <StyledLabel htmlFor={option}>{option}</StyledLabel>
+        </StyledRadioGroup>
+      ))}
+    </StyledInputContainer>
+  );
+};
+
+export { TextInput, TextAreaInput, SelectInput, RadioInput };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SelectInput, TextAreaInput, TextInput } from '.';
+import { RadioInput, SelectInput, TextAreaInput, TextInput } from '.';
 
 export default {
   title: 'Components/Inputs',
@@ -29,4 +29,12 @@ Select.args = {
   placeholder: 'Choose something...',
   required: true,
   options: ['One', 'Two', 'Three'],
+};
+
+export const Radio = (args) => <RadioInput {...args} />;
+Radio.args = {
+  name: 'Radio',
+  label: 'Radio group label',
+  options: ['One', 'Two', 'Three'],
+  required: true,
 };

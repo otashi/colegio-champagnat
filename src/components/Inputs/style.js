@@ -62,6 +62,15 @@ const StyledSelectInput = styled.select`
   }
 `;
 
+const StyledRadioInput = styled.input``;
+
+const StyledRadioGroup = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--n900);
+`;
+
 export {
   StyledInputContainer,
   StyledLabel,
@@ -69,4 +78,6 @@ export {
   StyledTextInput,
   StyledTextAreaInput,
   StyledSelectInput,
+  StyledRadioInput,
+  StyledRadioGroup,
 };
