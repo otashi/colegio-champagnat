@@ -33,9 +33,25 @@ const StyledTextInput = styled.input`
   }
 `;
 
+const StyledTextAreaInput = styled.textarea`
+  color: var(--n900);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding: 1rem 0.8rem;
+  border-radius: 0.4rem;
+  border: 0.2rem solid var(--n40);
+  max-height: 16rem;
+  resize: none;
+
+  &:focus {
+    outline: none;
+  }
+`;
+
 export {
   StyledInputContainer,
   StyledLabel,
   StyledRequired,
   StyledTextInput,
+  StyledTextAreaInput,
 };

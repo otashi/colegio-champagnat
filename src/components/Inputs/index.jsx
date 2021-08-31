@@ -4,6 +4,7 @@ import {
   StyledLabel,
   StyledRequired,
   StyledTextInput,
+  StyledTextAreaInput,
 } from './style';
 
 const TextInput = ({ name, label, placeholder, required }) => {
@@ -24,4 +25,21 @@ const TextInput = ({ name, label, placeholder, required }) => {
   );
 };
 
-export { TextInput };
+const TextAreaInput = ({ name, label, placeholder, required }) => {
+  return (
+    <StyledInputContainer>
+      <StyledLabel htmlFor={name}>
+        {label}
+        {required && <StyledRequired>*</StyledRequired>}
+      </StyledLabel>
+      <StyledTextAreaInput
+        placeholder={placeholder}
+        required={required}
+        id={name}
+        name={name}
+      />
+    </StyledInputContainer>
+  );
+};
+
+export { TextInput, TextAreaInput };
