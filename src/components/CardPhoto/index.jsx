@@ -2,12 +2,11 @@ import React from 'react';
 import { PhotoFilter } from '../PhotoFilter';
 import { StyledCardPhotoContainer, StyledCardPhoto } from './style';
 
-const CardPhoto = ({ path, children }) => {
+const CardPhoto = ({ path }) => {
   return (
     <StyledCardPhotoContainer>
       <PhotoFilter />
       <StyledCardPhoto src={path} />
-      {children}
     </StyledCardPhotoContainer>
   );
 };
