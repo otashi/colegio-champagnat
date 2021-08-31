@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextAreaInput, TextInput } from '.';
+import { SelectInput, TextAreaInput, TextInput } from '.';
 
 export default {
   title: 'Components/Inputs',
@@ -20,4 +20,13 @@ Textarea.args = {
   placeholder: 'Text',
   label: 'Field label',
   required: true,
+};
+
+export const Select = (args) => <SelectInput {...args} />;
+Select.args = {
+  name: 'Select',
+  label: 'Field label',
+  placeholder: 'Choose something...',
+  required: true,
+  options: ['One', 'Two', 'Three'],
 };

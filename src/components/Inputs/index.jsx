@@ -5,6 +5,7 @@ import {
   StyledRequired,
   StyledTextInput,
   StyledTextAreaInput,
+  StyledSelectInput,
 } from './style';
 
 const TextInput = ({ name, label, placeholder, required }) => {
@@ -42,4 +43,21 @@ const TextAreaInput = ({ name, label, placeholder, required }) => {
   );
 };
 
-export { TextInput, TextAreaInput };
+const SelectInput = ({ name, label, placeholder, options, required }) => {
+  return (
+    <StyledInputContainer>
+      <StyledLabel htmlFor={name}>
+        {label}
+        {required && <StyledRequired>*</StyledRequired>}
+      </StyledLabel>
+      <StyledSelectInput name={name} id={name}>
+        <option value=''>{placeholder}</option>
+        {options.map((option) => (
+          <option value={option}>{option}</option>
+        ))}
+      </StyledSelectInput>
+    </StyledInputContainer>
+  );
+};
+
+export { TextInput, TextAreaInput, SelectInput };
