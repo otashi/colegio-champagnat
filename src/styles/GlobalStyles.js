@@ -46,6 +46,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    padding-top: 5.5rem;
     -webkit-font-smoothing: antialiased;
   }
 `;
