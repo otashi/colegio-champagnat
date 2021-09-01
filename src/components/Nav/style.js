@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
 const StyledNav = styled.nav`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.8rem 1.6rem;
   background-color: var(--n10);
   box-shadow: 0 0.1rem 0.1rem 0 var(--n50a);
+  z-index: 1;
 `;
 
 const StyledNavLinks = styled.div`
