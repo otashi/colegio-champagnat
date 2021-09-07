@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { FullwidePhoto } from '../../components/FullwidePhoto';
-import { QuickNav } from '../../components/QuickNav';
-import { Section } from '../../components/Section';
-import { SectionTitle } from '../../components/SectionTitle';
-import { Button } from '../../components/Buttons';
-import { SectionCards } from '../../components/SectionCards';
-import { CardNews } from '../../components/CardNews';
+import { FullwidePhoto } from '../../../components/FullwidePhoto';
+import { QuickNav } from '../../../components/QuickNav';
+import { Section } from '../../../components/Section';
+import { SectionTitle } from '../../../components/SectionTitle';
+import { Button } from '../../../components/Buttons';
+import { SectionCards } from '../../../components/SectionCards';
+import { CardNews } from '../../../components/CardNews';
 
-const Boletines = () => {
+const CuartoPiso = () => {
   const [news] = useState([
     {
       title: 'Title of the article',
@@ -28,7 +28,7 @@ const Boletines = () => {
       <FullwidePhoto />
       <QuickNav section='Noticias' />
       <Section>
-        <SectionTitle title='Boletines' />
+        <SectionTitle title='Desde el cuarto piso' />
         <SectionCards>
           {news.map((article) => (
             <CardNews {...article} />
@@ -40,4 +40,4 @@ const Boletines = () => {
   );
 };
 
-export { Boletines };
+export { CuartoPiso };

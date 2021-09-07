@@ -21,14 +21,16 @@ import { Pasos } from './pages/Admissions/Pasos';
 import { Politicas } from './pages/Admissions/Politicas';
 import { Info } from './pages/Admissions/Info';
 
-import { Noticias } from './pages/Noticias';
-import { Boletines } from './pages/Boletines';
-import { CuartoPiso } from './pages/CuartoPiso';
-import { Articulo } from './pages/Articulo';
+import { Noticias } from './pages/News/Noticias';
+import { Boletines } from './pages/News/Boletines';
+import { CuartoPiso } from './pages/News/CuartoPiso';
+import { Articulo } from './pages/News/Articulo';
+
 import { Estudiantes } from './pages/Estudiantes';
 import { CampusVirtual } from './pages/CampusVirtual';
 import { Calendario } from './pages/Calendario';
 import { Recursos } from './pages/Recursos';
+
 import { Padres } from './pages/Parents/Padres';
 
 function App() {
