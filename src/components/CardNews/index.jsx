@@ -10,7 +10,7 @@ import {
   StyledCardNewsPublishedTime,
 } from './style';
 
-const CardNews = ({ title, category, photo, text, time }) => {
+const CardNews = ({ title, category, photo, text = '', time }) => {
   const textToRender = () => {
     const textArray = text.split(' ');
     if (textArray.length <= 25) {
