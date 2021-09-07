@@ -16,7 +16,7 @@ const StyledSocialMedia = styled.div`
 `;
 
 const StyledSocialMediaAnchor = styled.a`
-  text-transform: none;
+  text-decoration: none;
   color: var(--n0);
   &:hover {
     scale: 1.2;
