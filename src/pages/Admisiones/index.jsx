@@ -8,7 +8,7 @@ const Admisiones = () => {
   return (
     <>
       <FullwidePhoto />
-      <QuickNav section='Quienes somos' />
+      <QuickNav section='Admisiones' />
       <Section>
         <SectionTitle title='Admisiones' />
         <p>
