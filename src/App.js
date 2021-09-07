@@ -18,6 +18,7 @@ import { TratamientoDatos } from './pages/TratamientoDatos';
 import { Admisiones } from './pages/Admisiones';
 import { Pasos } from './pages/Pasos';
 import { Politicas } from './pages/Politicas';
+import { Info } from './pages/Info';
 
 function App() {
   return (
@@ -67,6 +68,9 @@ function App() {
           <Route exact path='/admisiones' component={Admisiones} />
           <Route exact path='/admisiones/pasos' component={Pasos} />
           <Route exact path='/admisiones/politicas' component={Politicas} />
+          <Route exact path='/admisiones/info' component={Info} />
+
+          
         </Switch>
         <Footer />
       </BrowserRouter>
