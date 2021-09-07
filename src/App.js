@@ -14,6 +14,7 @@ import { SistemaEvaluacionInstitucional } from './pages/SistemaEvaluacionInstitu
 import { ProyectoEcologico } from './pages/ProyectoEcologico';
 import { ManualConvivencia } from './pages/ManualConvivencia';
 import { Protocolos } from './pages/Protocolos';
+import { TratamientoDatos } from './pages/TratamientoDatos';
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
             component={ManualConvivencia}
           />
           <Route exact path='/protocolos' component={Protocolos} />
+          <Route exact path='/tratamiento-datos' component={TratamientoDatos} />
         </Switch>
         <Footer />
       </BrowserRouter>
