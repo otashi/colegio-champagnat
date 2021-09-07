@@ -10,6 +10,7 @@ import { Historia } from './pages/Historia';
 import { Identidad } from './pages/Identidad';
 import { EvangelizacionMarista } from './pages/EvangelizacionMarista';
 import { Pei } from './pages/Pei';
+import { SistemaEvaluacionInstitucional } from './pages/SistemaEvaluacionInstitucional';
 
 function App() {
   return (
@@ -28,6 +29,11 @@ function App() {
             component={EvangelizacionMarista}
           />
           <Route exact path='/pei' component={Pei} />
+          <Route
+            exact
+            path='/sistema-evaluacion-institucional'
+            component={SistemaEvaluacionInstitucional}
+          />
         </Switch>
         <Footer />
       </BrowserRouter>
