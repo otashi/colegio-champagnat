@@ -5,6 +5,7 @@ const StyledSectionTitle = styled.h1`
   font-weight: normal;
   font-size: 2.4rem;
   line-height: 2.8rem;
+  margin-bottom: 3.2rem;
 
   @media screen and (min-width: 768px) {
     font-size: 3.5rem;
