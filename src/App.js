@@ -15,10 +15,12 @@ import { ProyectoEcologico } from './pages/About/ProyectoEcologico';
 import { ManualConvivencia } from './pages/About/ManualConvivencia';
 import { Protocolos } from './pages/About/Protocolos';
 import { TratamientoDatos } from './pages/About/TratamientoDatos';
-import { Admisiones } from './pages/Admisiones';
-import { Pasos } from './pages/Pasos';
-import { Politicas } from './pages/Politicas';
-import { Info } from './pages/Info';
+
+import { Admisiones } from './pages/Admissions/Admisiones';
+import { Pasos } from './pages/Admissions/Pasos';
+import { Politicas } from './pages/Admissions/Politicas';
+import { Info } from './pages/Admissions/Info';
+
 import { Noticias } from './pages/Noticias';
 import { Boletines } from './pages/Boletines';
 import { CuartoPiso } from './pages/CuartoPiso';
