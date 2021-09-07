@@ -29,36 +29,44 @@ function App() {
           {/* About */}
           <Route exact path='/' component={Home} />
           <Route exact path='/quienes-somos' component={QuienesSomos} />
-          <Route exact path='/historia' component={Historia} />
-          <Route exact path='/identidad' component={Identidad} />
+          <Route exact path='/quienes-somos/historia' component={Historia} />
+          <Route exact path='/quienes-somos/identidad' component={Identidad} />
           <Route
             exact
-            path='/evangelizacion-marista'
+            path='/quienes-somos/evangelizacion-marista'
             component={EvangelizacionMarista}
           />
-          <Route exact path='/pei' component={Pei} />
+          <Route exact path='/quienes-somos/pei' component={Pei} />
           <Route
             exact
-            path='/sistema-evaluacion-institucional'
+            path='/quienes-somos/sistema-evaluacion-institucional'
             component={SistemaEvaluacionInstitucional}
           />
           <Route
             exact
-            path='/proyecto-ecologico'
+            path='/quienes-somos/proyecto-ecologico'
             component={ProyectoEcologico}
           />
           <Route
             exact
-            path='/manual-convivencia'
+            path='/quienes-somos/manual-convivencia'
             component={ManualConvivencia}
           />
-          <Route exact path='/protocolos' component={Protocolos} />
-          <Route exact path='/tratamiento-datos' component={TratamientoDatos} />
+          <Route
+            exact
+            path='/quienes-somos/protocolos'
+            component={Protocolos}
+          />
+          <Route
+            exact
+            path='/quienes-somos/tratamiento-datos'
+            component={TratamientoDatos}
+          />
 
           {/* Admissions */}
           <Route exact path='/admisiones' component={Admisiones} />
-          <Route exact path='/pasos' component={Pasos} />
-          <Route exact path='/politicas' component={Politicas} /> 
+          <Route exact path='/admisiones/pasos' component={Pasos} />
+          <Route exact path='/admisiones/politicas' component={Politicas} />
         </Switch>
         <Footer />
       </BrowserRouter>
