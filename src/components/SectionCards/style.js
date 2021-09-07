@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 const StyledSectionCards = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 1.6rem;
 `;
 
