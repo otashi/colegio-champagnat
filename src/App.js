@@ -23,6 +23,7 @@ import { Noticias } from './pages/Noticias';
 import { Boletines } from './pages/Boletines';
 import { CuartoPiso } from './pages/CuartoPiso';
 import { Articulo } from './pages/Articulo';
+import { Estudiantes } from './pages/Estudiantes';
 
 function App() {
   return (
@@ -78,7 +79,7 @@ function App() {
           <Route exact path='/noticias/cuarto-piso' component={CuartoPiso} />
           <Route exact path='/articulo/:id' component={Articulo} />
 
-          
+          <Route exact path='/estudiantes' component={Estudiantes} />
         </Switch>
         <Footer />
       </BrowserRouter>
