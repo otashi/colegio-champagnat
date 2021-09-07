@@ -32,6 +32,7 @@ import { Calendario } from './pages/Students/Calendario';
 import { Recursos } from './pages/Students/Recursos';
 
 import { Padres } from './pages/Parents/Padres';
+import { Biblioteca } from './pages/Students/Biblioteca';
 
 function App() {
   return (
@@ -95,6 +96,7 @@ function App() {
           />
           <Route exact path='/estudiantes/calendario' component={Calendario} />
           <Route exact path='/estudiantes/recursos' component={Recursos} />
+          <Route exact path='/estudiantes/biblioteca' component={Biblioteca} />
 
           <Route exact path='/padres' component={Padres} />
         </Switch>
