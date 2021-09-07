@@ -13,6 +13,7 @@ import { Pei } from './pages/Pei';
 import { SistemaEvaluacionInstitucional } from './pages/SistemaEvaluacionInstitucional';
 import { ProyectoEcologico } from './pages/ProyectoEcologico';
 import { ManualConvivencia } from './pages/ManualConvivencia';
+import { Protocolos } from './pages/Protocolos';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
             path='/manual-convivencia'
             component={ManualConvivencia}
           />
+          <Route exact path='/protocolos' component={Protocolos} />
         </Switch>
         <Footer />
       </BrowserRouter>
