@@ -21,6 +21,7 @@ import { Politicas } from './pages/Politicas';
 import { Info } from './pages/Info';
 import { Noticias } from './pages/Noticias';
 import { Boletines } from './pages/Boletines';
+import { CuartoPiso } from './pages/CuartoPiso';
 
 function App() {
   return (
@@ -73,6 +74,7 @@ function App() {
 
           <Route exact path='/noticias' component={Noticias} />
           <Route exact path='/noticias/boletines' component={Boletines} />
+          <Route exact path='/noticias/cuarto-piso' component={CuartoPiso} />
         </Switch>
         <Footer />
       </BrowserRouter>
