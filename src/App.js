@@ -12,6 +12,7 @@ import { EvangelizacionMarista } from './pages/EvangelizacionMarista';
 import { Pei } from './pages/Pei';
 import { SistemaEvaluacionInstitucional } from './pages/SistemaEvaluacionInstitucional';
 import { ProyectoEcologico } from './pages/ProyectoEcologico';
+import { ManualConvivencia } from './pages/ManualConvivencia';
 
 function App() {
   return (
@@ -39,6 +40,11 @@ function App() {
             exact
             path='/proyecto-ecologico'
             component={ProyectoEcologico}
+          />
+          <Route
+            exact
+            path='/manual-convivencia'
+            component={ManualConvivencia}
           />
         </Switch>
         <Footer />
