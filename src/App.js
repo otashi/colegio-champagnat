@@ -6,6 +6,7 @@ import { Footer } from './components/Footer';
 
 import { Home } from './pages/Home';
 import { QuienesSomos } from './pages/QuienesSomos';
+import { Historia } from './pages/Historia';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/quienes-somos' component={QuienesSomos} />
+          <Route exact path='/historia' component={Historia} />
         </Switch>
         <Footer />
       </BrowserRouter>
