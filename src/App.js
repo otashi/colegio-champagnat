@@ -7,6 +7,7 @@ import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { QuienesSomos } from './pages/QuienesSomos';
 import { Historia } from './pages/Historia';
+import { Identidad } from './pages/Identidad';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route exact path='/quienes-somos' component={QuienesSomos} />
           <Route exact path='/historia' component={Historia} />
+          <Route exact path='/identidad' component={Identidad} />
         </Switch>
         <Footer />
       </BrowserRouter>
