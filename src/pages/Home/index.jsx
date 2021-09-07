@@ -3,7 +3,6 @@ import { FullwideNews } from '../../components/FullwideNews';
 import { SectionTitle } from '../../components/SectionTitle';
 import { Carousel } from '../../components/Carousel';
 import { PartnerCard } from '../../components/PartnerCard';
-import { Footer } from '../../components/Footer';
 
 import {
   StyledLastNewsSection,

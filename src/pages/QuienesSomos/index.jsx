@@ -1,5 +1,4 @@
 import React from 'react';
-import { Footer } from '../../components/Footer';
 import { FullwidePhoto } from '../../components/FullwidePhoto';
 import { QuickNav } from '../../components/QuickNav';
 import { Section } from '../../components/Section';
