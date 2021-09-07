@@ -9,6 +9,7 @@ import { QuienesSomos } from './pages/QuienesSomos';
 import { Historia } from './pages/Historia';
 import { Identidad } from './pages/Identidad';
 import { EvangelizacionMarista } from './pages/EvangelizacionMarista';
+import { Pei } from './pages/Pei';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             path='/evangelizacion-marista'
             component={EvangelizacionMarista}
           />
+          <Route exact path='/pei' component={Pei} />
         </Switch>
         <Footer />
       </BrowserRouter>
