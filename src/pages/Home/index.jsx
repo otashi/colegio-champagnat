@@ -45,7 +45,6 @@ const Home = () => {
           <PartnerCard />
         </StyledPartnersContainer>
       </StyledPartnerSection>
-      <Footer />
     </>
   );
 };
