@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { GlobalStyles } from './styles/GlobalStyles';
 import { Nav } from './components/Nav';
+import { Footer } from './components/Footer';
 
 import { Home } from './pages/Home';
 import { QuienesSomos } from './pages/QuienesSomos';
@@ -16,6 +17,7 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route exact path='/quienes-somos' component={QuienesSomos} />
         </Switch>
+        <Footer />
       </BrowserRouter>
     </div>
   );
