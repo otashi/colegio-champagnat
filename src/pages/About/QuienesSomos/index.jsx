@@ -1,8 +1,8 @@
 import React from 'react';
-import { FullwidePhoto } from '../../components/FullwidePhoto';
-import { QuickNav } from '../../components/QuickNav';
-import { Section } from '../../components/Section';
-import { SectionTitle } from '../../components/SectionTitle';
+import { FullwidePhoto } from '../../../components/FullwidePhoto';
+import { QuickNav } from '../../../components/QuickNav';
+import { Section } from '../../../components/Section';
+import { SectionTitle } from '../../../components/SectionTitle';
 
 const QuienesSomos = () => {
   return (

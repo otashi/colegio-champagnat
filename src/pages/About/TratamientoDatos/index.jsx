@@ -1,16 +1,16 @@
 import React from 'react';
-import { FullwidePhoto } from '../../components/FullwidePhoto';
-import { QuickNav } from '../../components/QuickNav';
-import { Section } from '../../components/Section';
-import { SectionTitle } from '../../components/SectionTitle';
+import { FullwidePhoto } from '../../../components/FullwidePhoto';
+import { QuickNav } from '../../../components/QuickNav';
+import { Section } from '../../../components/Section';
+import { SectionTitle } from '../../../components/SectionTitle';
 
-const Historia = () => {
+const TratamientoDatos = () => {
   return (
     <>
       <FullwidePhoto />
       <QuickNav section='Quienes somos' />
       <Section>
-        <SectionTitle title='Historia' />
+        <SectionTitle title='Tratamiento y protección de datos personales' />
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -25,4 +25,4 @@ const Historia = () => {
   );
 };
 
-export { Historia };
+export { TratamientoDatos };

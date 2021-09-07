@@ -1,16 +1,16 @@
 import React from 'react';
-import { FullwidePhoto } from '../../components/FullwidePhoto';
-import { QuickNav } from '../../components/QuickNav';
-import { Section } from '../../components/Section';
-import { SectionTitle } from '../../components/SectionTitle';
+import { FullwidePhoto } from '../../../components/FullwidePhoto';
+import { QuickNav } from '../../../components/QuickNav';
+import { Section } from '../../../components/Section';
+import { SectionTitle } from '../../../components/SectionTitle';
 
-const ManualConvivencia = () => {
+const Identidad = () => {
   return (
     <>
       <FullwidePhoto />
       <QuickNav section='Quienes somos' />
       <Section>
-        <SectionTitle title='Manual de convivencia' />
+        <SectionTitle title='Identidad' />
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -25,4 +25,4 @@ const ManualConvivencia = () => {
   );
 };
 
-export { ManualConvivencia };
+export { Identidad };

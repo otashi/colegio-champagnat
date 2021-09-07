@@ -1,16 +1,16 @@
 import React from 'react';
-import { FullwidePhoto } from '../../components/FullwidePhoto';
-import { QuickNav } from '../../components/QuickNav';
-import { Section } from '../../components/Section';
-import { SectionTitle } from '../../components/SectionTitle';
+import { FullwidePhoto } from '../../../components/FullwidePhoto';
+import { QuickNav } from '../../../components/QuickNav';
+import { Section } from '../../../components/Section';
+import { SectionTitle } from '../../../components/SectionTitle';
 
-const EvangelizacionMarista = () => {
+const Historia = () => {
   return (
     <>
       <FullwidePhoto />
       <QuickNav section='Quienes somos' />
       <Section>
-        <SectionTitle title='Evangelización marista' />
+        <SectionTitle title='Historia' />
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -25,4 +25,4 @@ const EvangelizacionMarista = () => {
   );
 };
 
-export { EvangelizacionMarista };
+export { Historia };
