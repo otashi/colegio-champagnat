@@ -15,6 +15,7 @@ import { ProyectoEcologico } from './pages/ProyectoEcologico';
 import { ManualConvivencia } from './pages/ManualConvivencia';
 import { Protocolos } from './pages/Protocolos';
 import { TratamientoDatos } from './pages/TratamientoDatos';
+import { Admisiones } from './pages/Admisiones';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Switch>
+          {/* About */}
           <Route exact path='/' component={Home} />
           <Route exact path='/quienes-somos' component={QuienesSomos} />
           <Route exact path='/historia' component={Historia} />
@@ -50,6 +52,10 @@ function App() {
           />
           <Route exact path='/protocolos' component={Protocolos} />
           <Route exact path='/tratamiento-datos' component={TratamientoDatos} />
+
+          {/* Admissions */}
+          <Route exact path='/admisiones' component={Admisiones} />
+          
         </Switch>
         <Footer />
       </BrowserRouter>
