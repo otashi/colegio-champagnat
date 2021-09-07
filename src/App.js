@@ -20,6 +20,7 @@ import { Pasos } from './pages/Pasos';
 import { Politicas } from './pages/Politicas';
 import { Info } from './pages/Info';
 import { Noticias } from './pages/Noticias';
+import { Boletines } from './pages/Boletines';
 
 function App() {
   return (
@@ -71,6 +72,7 @@ function App() {
           <Route exact path='/admisiones/info' component={Info} />
 
           <Route exact path='/noticias' component={Noticias} />
+          <Route exact path='/noticias/boletines' component={Boletines} />
         </Switch>
         <Footer />
       </BrowserRouter>
