@@ -4,6 +4,7 @@ import { GlobalStyles } from './styles/GlobalStyles';
 import { Nav } from './components/Nav';
 
 import { Home } from './pages/Home';
+import { QuienesSomos } from './pages/QuienesSomos';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Switch>
-          <Route path='/' component={Home} />
+          <Route exact path='/' component={Home} />
+          <Route exact path='/quienes-somos' component={QuienesSomos} />
         </Switch>
       </BrowserRouter>
     </div>
