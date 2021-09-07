@@ -2,7 +2,7 @@ import React from 'react';
 import { CardNewsBrief } from '../CardNewsBrief';
 import { StyledCarousel } from './style';
 
-const Carousel = ({ news }) => {
+const Carousel = ({ news = [] }) => {
   return (
     <StyledCarousel>
       {news.map((item) => (
