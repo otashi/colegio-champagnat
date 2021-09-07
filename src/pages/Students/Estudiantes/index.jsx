@@ -1,16 +1,16 @@
 import React from 'react';
-import { FullwidePhoto } from '../../components/FullwidePhoto';
-import { QuickNav } from '../../components/QuickNav';
-import { Section } from '../../components/Section';
-import { SectionTitle } from '../../components/SectionTitle';
+import { FullwidePhoto } from '../../../components/FullwidePhoto';
+import { QuickNav } from '../../../components/QuickNav';
+import { Section } from '../../../components/Section';
+import { SectionTitle } from '../../../components/SectionTitle';
 
-const Recursos = () => {
+const Estudiantes = () => {
   return (
     <>
       <FullwidePhoto />
       <QuickNav section='Estudiantes' />
       <Section>
-        <SectionTitle title='Recursos académicos' />
+        <SectionTitle title='Estudiantes' />
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -25,4 +25,4 @@ const Recursos = () => {
   );
 };
 
-export { Recursos };
+export { Estudiantes };

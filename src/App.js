@@ -26,10 +26,10 @@ import { Boletines } from './pages/News/Boletines';
 import { CuartoPiso } from './pages/News/CuartoPiso';
 import { Articulo } from './pages/News/Articulo';
 
-import { Estudiantes } from './pages/Estudiantes';
-import { CampusVirtual } from './pages/CampusVirtual';
-import { Calendario } from './pages/Calendario';
-import { Recursos } from './pages/Recursos';
+import { Estudiantes } from './pages/Students/Estudiantes';
+import { CampusVirtual } from './pages/Students/CampusVirtual';
+import { Calendario } from './pages/Students/Calendario';
+import { Recursos } from './pages/Students/Recursos';
 
 import { Padres } from './pages/Parents/Padres';
 

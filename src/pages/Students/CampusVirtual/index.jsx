@@ -1,16 +1,17 @@
 import React from 'react';
-import { FullwidePhoto } from '../../components/FullwidePhoto';
-import { QuickNav } from '../../components/QuickNav';
-import { Section } from '../../components/Section';
-import { SectionTitle } from '../../components/SectionTitle';
+import { Button } from '../../../components/Buttons';
+import { FullwidePhoto } from '../../../components/FullwidePhoto';
+import { QuickNav } from '../../../components/QuickNav';
+import { Section } from '../../../components/Section';
+import { SectionTitle } from '../../../components/SectionTitle';
 
-const Estudiantes = () => {
+const CampusVirtual = () => {
   return (
     <>
       <FullwidePhoto />
       <QuickNav section='Estudiantes' />
       <Section>
-        <SectionTitle title='Estudiantes' />
+        <SectionTitle title='Campus Virtual' />
         <p>
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -20,9 +21,10 @@ const Estudiantes = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum."
         </p>
+        <Button label='Ir al sitio' />
       </Section>
     </>
   );
 };
 
-export { Estudiantes };
+export { CampusVirtual };
