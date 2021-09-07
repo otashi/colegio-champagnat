@@ -16,6 +16,7 @@ import { ManualConvivencia } from './pages/ManualConvivencia';
 import { Protocolos } from './pages/Protocolos';
 import { TratamientoDatos } from './pages/TratamientoDatos';
 import { Admisiones } from './pages/Admisiones';
+import { Pasos } from './pages/Pasos';
 
 function App() {
   return (
@@ -55,7 +56,7 @@ function App() {
 
           {/* Admissions */}
           <Route exact path='/admisiones' component={Admisiones} />
-          
+          <Route exact path='/pasos' component={Pasos} />
         </Switch>
         <Footer />
       </BrowserRouter>
