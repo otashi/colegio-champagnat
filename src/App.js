@@ -24,6 +24,7 @@ import { Boletines } from './pages/Boletines';
 import { CuartoPiso } from './pages/CuartoPiso';
 import { Articulo } from './pages/Articulo';
 import { Estudiantes } from './pages/Estudiantes';
+import { CampusVirtual } from './pages/CampusVirtual';
 
 function App() {
   return (
@@ -80,6 +81,7 @@ function App() {
           <Route exact path='/articulo/:id' component={Articulo} />
 
           <Route exact path='/estudiantes' component={Estudiantes} />
+          <Route exact path='/campus-virtual' component={CampusVirtual} />
         </Switch>
         <Footer />
       </BrowserRouter>
