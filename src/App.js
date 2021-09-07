@@ -27,6 +27,7 @@ import { Estudiantes } from './pages/Estudiantes';
 import { CampusVirtual } from './pages/CampusVirtual';
 import { Calendario } from './pages/Calendario';
 import { Recursos } from './pages/Recursos';
+import { Padres } from './pages/Parents/Padres';
 
 function App() {
   return (
@@ -90,7 +91,8 @@ function App() {
           />
           <Route exact path='/estudiantes/calendario' component={Calendario} />
           <Route exact path='/estudiantes/recursos' component={Recursos} />
-          
+
+          <Route exact path='/padres' component={Padres} />
         </Switch>
         <Footer />
       </BrowserRouter>
