@@ -19,6 +19,7 @@ import { Admisiones } from './pages/Admisiones';
 import { Pasos } from './pages/Pasos';
 import { Politicas } from './pages/Politicas';
 import { Info } from './pages/Info';
+import { Noticias } from './pages/Noticias';
 
 function App() {
   return (
@@ -27,8 +28,8 @@ function App() {
       <BrowserRouter>
         <Nav />
         <Switch>
-          {/* About */}
           <Route exact path='/' component={Home} />
+
           <Route exact path='/quienes-somos' component={QuienesSomos} />
           <Route exact path='/quienes-somos/historia' component={Historia} />
           <Route exact path='/quienes-somos/identidad' component={Identidad} />
@@ -64,13 +65,12 @@ function App() {
             component={TratamientoDatos}
           />
 
-          {/* Admissions */}
           <Route exact path='/admisiones' component={Admisiones} />
           <Route exact path='/admisiones/pasos' component={Pasos} />
           <Route exact path='/admisiones/politicas' component={Politicas} />
           <Route exact path='/admisiones/info' component={Info} />
 
-          
+          <Route exact path='/noticias' component={Noticias} />
         </Switch>
         <Footer />
       </BrowserRouter>
