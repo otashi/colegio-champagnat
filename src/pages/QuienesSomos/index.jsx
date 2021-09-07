@@ -1,7 +1,6 @@
 import React from 'react';
 import { Footer } from '../../components/Footer';
 import { FullwidePhoto } from '../../components/FullwidePhoto';
-import { Nav } from '../../components/Nav';
 import { QuickNav } from '../../components/QuickNav';
 import { Section } from '../../components/Section';
 import { SectionTitle } from '../../components/SectionTitle';
@@ -9,7 +8,6 @@ import { SectionTitle } from '../../components/SectionTitle';
 const QuienesSomos = () => {
   return (
     <>
-      <Nav />
       <FullwidePhoto />
       <QuickNav section='Quienes somos' />
       <Section>
@@ -24,7 +22,6 @@ const QuienesSomos = () => {
           culpa qui officia deserunt mollit anim id est laborum."
         </p>
       </Section>
-      <Footer />
     </>
   );
 };
