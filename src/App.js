@@ -11,6 +11,7 @@ import { Identidad } from './pages/Identidad';
 import { EvangelizacionMarista } from './pages/EvangelizacionMarista';
 import { Pei } from './pages/Pei';
 import { SistemaEvaluacionInstitucional } from './pages/SistemaEvaluacionInstitucional';
+import { ProyectoEcologico } from './pages/ProyectoEcologico';
 
 function App() {
   return (
@@ -33,6 +34,11 @@ function App() {
             exact
             path='/sistema-evaluacion-institucional'
             component={SistemaEvaluacionInstitucional}
+          />
+          <Route
+            exact
+            path='/proyecto-ecologico'
+            component={ProyectoEcologico}
           />
         </Switch>
         <Footer />
