@@ -4,7 +4,7 @@ const StyledMenu = styled.ul`
   display: grid;
   list-style: none;
   margin-left: 1.6rem;
-  padding: 0;
+  padding: 5.2rem 0;
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
@@ -33,6 +33,7 @@ const StyledSectionItem = styled.li`
 const StyledSubsectionList = styled.ul`
   list-style: none;
   padding: 0;
+  margin-top: 0.8rem;
 `;
 
 const StyledSubsectionItem = styled.li`
