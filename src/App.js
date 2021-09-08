@@ -30,11 +30,12 @@ import { Estudiantes } from './pages/Students/Estudiantes';
 import { CampusVirtual } from './pages/Students/CampusVirtual';
 import { Calendario } from './pages/Students/Calendario';
 import { Recursos } from './pages/Students/Recursos';
+import { Biblioteca } from './pages/Students/Biblioteca';
 
 import { Padres } from './pages/Parents/Padres';
-import { Biblioteca } from './pages/Students/Biblioteca';
 import { Circulares } from './pages/Parents/Circulares';
 import { ContactoDocente } from './pages/Parents/ContactoDocente';
+import { ConsejoPadres } from './pages/Parents/ConsejoPadres';
 
 function App() {
   return (
@@ -106,6 +107,11 @@ function App() {
             exact
             path='/padres/contacto-docente'
             component={ContactoDocente}
+          />
+          <Route
+            exact
+            path='/padres/consejo-padres'
+            component={ConsejoPadres}
           />
         </Switch>
         <Footer />
