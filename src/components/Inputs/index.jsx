@@ -10,7 +10,7 @@ import {
   StyledRadioGroup,
 } from './style';
 
-const TextInput = ({ name, label, placeholder, required }) => {
+const Input = ({ name, label, placeholder, required, type }) => {
   return (
     <StyledInputContainer>
       <StyledLabel htmlFor={name}>
@@ -18,7 +18,7 @@ const TextInput = ({ name, label, placeholder, required }) => {
         {required && <StyledRequired>*</StyledRequired>}
       </StyledLabel>
       <StyledTextInput
-        type='text'
+        type={type}
         placeholder={placeholder}
         name={name}
         id={name}
@@ -45,7 +45,7 @@ const TextAreaInput = ({ name, label, placeholder, required }) => {
   );
 };
 
-const SelectInput = ({ name, label, placeholder, options, required }) => {
+const SelectInput = ({ name, label, placeholder, options = [], required }) => {
   return (
     <StyledInputContainer>
       <StyledLabel htmlFor={name}>
@@ -64,7 +64,7 @@ const SelectInput = ({ name, label, placeholder, options, required }) => {
   );
 };
 
-const RadioInput = ({ name, label, options, required }) => {
+const RadioInput = ({ name, label, options = [], required }) => {
   return (
     <StyledInputContainer>
       <StyledLabel>
@@ -86,4 +86,4 @@ const RadioInput = ({ name, label, options, required }) => {
   );
 };
 
-export { TextInput, TextAreaInput, SelectInput, RadioInput };
+export { Input, TextAreaInput, SelectInput, RadioInput };
