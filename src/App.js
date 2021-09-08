@@ -38,6 +38,7 @@ import { ContactoDocente } from './pages/Parents/ContactoDocente';
 import { ConsejoPadres } from './pages/Parents/ConsejoPadres';
 import { Rutas } from './pages/Parents/Rutas';
 import { Utiles } from './pages/Parents/Utiles';
+import { Asofamilia } from './pages/Asofamilia';
 
 function App() {
   return (
@@ -117,6 +118,8 @@ function App() {
           />
           <Route exact path='/padres/rutas' component={Rutas} />
           <Route exact path='/padres/utiles' component={Utiles} />
+
+          <Route exact path='/asofamilia' component={Asofamilia} />
         </Switch>
         <Footer />
       </BrowserRouter>
