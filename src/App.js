@@ -41,6 +41,7 @@ import { Utiles } from './pages/Parents/Utiles';
 import { Asofamilia } from './pages/Asofamilia';
 import { Contacto } from './pages/Contact/Contacto';
 import { PQRSF } from './pages/Contact/PQRSF';
+import { RutasAtencion } from './pages/Contact/RutasAtencion';
 
 function App() {
   return (
@@ -125,6 +126,11 @@ function App() {
 
           <Route exact path='/contacto' component={Contacto} />
           <Route exact path='/contacto/PQRSF' component={PQRSF} />
+          <Route
+            exact
+            path='/contacto/rutas-atencion'
+            component={RutasAtencion}
+          />
         </Switch>
         <Footer />
       </BrowserRouter>
