@@ -1,6 +1,5 @@
 import React from 'react';
 import { FullwidePhoto } from '../../components/FullwidePhoto';
-import { QuickNav } from '../../components/QuickNav';
 import { Section } from '../../components/Section';
 import { SectionTitle } from '../../components/SectionTitle';
 import { Button } from '../../components/Buttons';
@@ -9,7 +8,6 @@ const Asofamilia = () => {
   return (
     <>
       <FullwidePhoto />
-      <QuickNav section='Padres' />
       <Section>
         <SectionTitle title='Asofamilia' />
         <p>
