@@ -36,6 +36,7 @@ import { Padres } from './pages/Parents/Padres';
 import { Circulares } from './pages/Parents/Circulares';
 import { ContactoDocente } from './pages/Parents/ContactoDocente';
 import { ConsejoPadres } from './pages/Parents/ConsejoPadres';
+import { Rutas } from './pages/Parents/Rutas';
 
 function App() {
   return (
@@ -113,6 +114,8 @@ function App() {
             path='/padres/consejo-padres'
             component={ConsejoPadres}
           />
+          <Route exact path='/padres/rutas' component={Rutas} />
+          
         </Switch>
         <Footer />
       </BrowserRouter>
