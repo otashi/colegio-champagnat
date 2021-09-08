@@ -40,6 +40,7 @@ import { Rutas } from './pages/Parents/Rutas';
 import { Utiles } from './pages/Parents/Utiles';
 import { Asofamilia } from './pages/Asofamilia';
 import { Contacto } from './pages/Contact/Contacto';
+import { PQRSF } from './pages/Contact/PQRSF';
 
 function App() {
   return (
@@ -123,6 +124,7 @@ function App() {
           <Route exact path='/asofamilia' component={Asofamilia} />
 
           <Route exact path='/contacto' component={Contacto} />
+          <Route exact path='/contacto/PQRSF' component={PQRSF} />
         </Switch>
         <Footer />
       </BrowserRouter>
