@@ -40,6 +40,7 @@ import { Contacto } from '../pages/Contact/Contacto';
 import { PQRSF } from '../pages/Contact/PQRSF';
 import { RutasAtencion } from '../pages/Contact/RutasAtencion';
 import { Portales } from '../pages/Portales';
+import { NotFound } from '../pages/NotFound';
 
 const RoutesSwitch = () => {
   return (
@@ -115,6 +116,8 @@ const RoutesSwitch = () => {
       <Route exact path='/contacto/rutas-atencion' component={RutasAtencion} />
 
       <Route exact path='/portales' component={Portales} />
+
+      <Route component={NotFound} />
     </Switch>
   );
 };
