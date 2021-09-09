@@ -1,11 +1,14 @@
 import React from 'react';
+import { Anchor } from '../Anchor';
 import { StyledPartnerCard, StyledPartnerIcon } from './style';
 
-const PartnerCard = ({ path }) => {
+const PartnerCard = ({ name, path, coverURL }) => {
   return (
-    <StyledPartnerCard>
-      <StyledPartnerIcon src={path} alt='partner icon' />
-    </StyledPartnerCard>
+    <Anchor href={path}>
+      <StyledPartnerCard>
+        <StyledPartnerIcon src={coverURL} alt={name} />
+      </StyledPartnerCard>
+    </Anchor>
   );
 };
 
