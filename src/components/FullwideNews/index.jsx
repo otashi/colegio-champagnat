@@ -8,7 +8,7 @@ import {
 
 const FullwideNews = ({ title, category, photo }) => {
   return (
-    <FullwidePhoto path={photo}>
+    <FullwidePhoto coverURL={photo}>
       <StyledFullwideNewsData>
         <StyledFullwideNewsTitle>{title}</StyledFullwideNewsTitle>
         <StyledFullwideNewsCategory>{category}</StyledFullwideNewsCategory>

@@ -22,7 +22,7 @@ const CardNews = ({ title, category, photo, text = '', time }) => {
 
   return (
     <StyledCardNewsContainer>
-      <CardPhoto path={photo} />
+      <CardPhoto coverURL={photo} />
       <StyledCardNewsData>
         <StyledCardNewsContent>
           <StyledCardNewsCategory>{category}</StyledCardNewsCategory>
