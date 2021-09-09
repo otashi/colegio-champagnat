@@ -7,12 +7,14 @@ import {
 } from './style';
 import { CardPhoto } from '../CardPhoto';
 
-const CardNewsBrief = ({ title, category, photo }) => {
+const CardNewsBrief = ({ title, category, coverURL }) => {
   return (
     <StyledCardNewsBriefContainer>
-      <CardPhoto path={photo} />
+      <CardPhoto coverURL={coverURL} />
       <StyledCardNewsBriefData>
-        <StyledCardNewsBriefCategory>{category}</StyledCardNewsBriefCategory>
+        <StyledCardNewsBriefCategory>
+          {category.category}
+        </StyledCardNewsBriefCategory>
         <StyledCardNewsBriefTitle>{title}</StyledCardNewsBriefTitle>
       </StyledCardNewsBriefData>
     </StyledCardNewsBriefContainer>
