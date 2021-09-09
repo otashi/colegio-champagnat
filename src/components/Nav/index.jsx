@@ -12,6 +12,7 @@ import logo from '../../assets/champagnat.png';
 import '../../styles/icons.css';
 import { sitemap } from '../../utils/sitemap';
 import { Menu } from '../Menu';
+import { Link } from '../Link';
 
 const Nav = () => {
   const [menu, setMenu] = useState(false);
@@ -26,7 +27,9 @@ const Nav = () => {
   return (
     <>
       <StyledNav>
-        <StyledLogo src={logo} alt='Champagnat' />
+        <Link to='/'>
+          <StyledLogo src={logo} alt='Champagnat' />
+        </Link>
         <StyledNavLinks>
           <StyledNavSectionsList>
             {sections.map((section) => (
@@ -41,7 +44,10 @@ const Nav = () => {
         </StyledNavLinks>
       </StyledNav>
       {modal &&
-        ReactDOM.createPortal(<Menu />, document.getElementById('modal'))}
+        ReactDOM.createPortal(
+          <Menu handleClick={toggleMenu} />,
+          document.getElementById('modal')
+        )}
     </>
   );
 };
