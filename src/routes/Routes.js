@@ -111,7 +111,7 @@ const RoutesSwitch = () => {
       <Route exact path='/asofamilia' component={Asofamilia} />
 
       <Route exact path='/contacto' component={Contacto} />
-      <Route exact path='/contacto/PQRSF' component={PQRSF} />
+      <Route exact path='/contacto/pqrsf' component={PQRSF} />
       <Route exact path='/contacto/rutas-atencion' component={RutasAtencion} />
 
       <Route exact path='/portales' component={Portales} />
