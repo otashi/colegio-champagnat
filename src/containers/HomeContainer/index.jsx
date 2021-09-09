@@ -3,6 +3,13 @@ import { API } from '../../utils/API';
 import { Home } from '../../pages/Home';
 
 const HomeContainer = () => {
+  const [news, setNews] = useState([]);
+  useEffect(() => {
+    fetch(`${API}/articles?_sort=created_at:DESC&_limit=5`)
+      .then((response) => response.json())
+      .then((articlesArr) => setNews(articlesArr));
+  }, []);
+
   const [sponsors, setSponsors] = useState([]);
   useEffect(() => {
     fetch(`${API}/sponsors`)
@@ -24,7 +31,9 @@ const HomeContainer = () => {
       .then((networksArr) => setNetworks(networksArr));
   }, []);
 
-  return <Home sponsors={sponsors} allies={allies} networks={networks} />;
+  return (
+    <Home news={news} sponsors={sponsors} allies={allies} networks={networks} />
+  );
 };
 
 export { HomeContainer };
