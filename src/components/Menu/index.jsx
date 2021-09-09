@@ -1,5 +1,6 @@
 import React from 'react';
 import { sitemap } from '../../utils/sitemap';
+import { routes } from '../../utils/routes';
 import {
   StyledMenu,
   StyledSection,
@@ -8,6 +9,8 @@ import {
   StyledSubsectionItem,
 } from './style';
 import { Blanket } from '../Blanket';
+import { Link } from '../Link';
+import { Anchor } from '../Anchor';
 
 const Menu = () => {
   const sections = Object.keys(sitemap);
@@ -18,10 +21,18 @@ const Menu = () => {
         {sections.map((section) => {
           return (
             <StyledSection>
-              <StyledSectionItem>{section}</StyledSectionItem>
+              <StyledSectionItem>
+                <Link to={routes[section]}>{section}</Link>
+              </StyledSectionItem>
               <StyledSubsectionList>
                 {sitemap[section].map((subsection) => (
-                  <StyledSubsectionItem>{subsection}</StyledSubsectionItem>
+                  <StyledSubsectionItem>
+                    {section !== 'Portales' ? (
+                      <Link to={routes[subsection]}>{subsection}</Link>
+                    ) : (
+                      <Anchor href={routes[subsection]}>{subsection}</Anchor>
+                    )}
+                  </StyledSubsectionItem>
                 ))}
               </StyledSubsectionList>
             </StyledSection>
