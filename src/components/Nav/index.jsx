@@ -11,6 +11,7 @@ import {
 import logo from '../../assets/champagnat.png';
 import '../../styles/icons.css';
 import { sitemap } from '../../utils/sitemap';
+import { routes } from '../../utils/routes';
 import { Menu } from '../Menu';
 import { Link } from '../Link';
 
@@ -33,7 +34,9 @@ const Nav = () => {
         <StyledNavLinks>
           <StyledNavSectionsList>
             {sections.map((section) => (
-              <StyledNavSectionItem>{section}</StyledNavSectionItem>
+              <StyledNavSectionItem>
+                <Link to={routes[section]}>{section}</Link>
+              </StyledNavSectionItem>
             ))}
           </StyledNavSectionsList>
           {!menu ? (
