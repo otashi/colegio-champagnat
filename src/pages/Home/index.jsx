@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FullwideNews } from '../../components/FullwideNews';
 import { SectionTitle } from '../../components/SectionTitle';
 import { Carousel } from '../../components/Carousel';
@@ -11,28 +11,7 @@ import {
   StyledPartnersContainer,
 } from './style';
 
-const Home = ({ sponsors = [], allies = [], networks = [] }) => {
-  const [news] = useState([
-    {
-      title: 'Title of the article',
-      category: 'Category',
-      text:
-        'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia....',
-    },
-    {
-      title: 'Title of the article',
-      category: 'Category',
-      text:
-        'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia....',
-    },
-    {
-      title: 'Title of the article',
-      category: 'Category',
-      text:
-        'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia....',
-    },
-  ]);
-
+const Home = ({ news = [], sponsors = [], allies = [], networks = [] }) => {
   return (
     <>
       <FullwideNews />
