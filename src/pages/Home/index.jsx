@@ -11,7 +11,7 @@ import {
   StyledPartnersContainer,
 } from './style';
 
-const Home = () => {
+const Home = ({ sponsors = [], allies = [], networks = [] }) => {
   const [news] = useState([
     {
       title: 'Title of the article',
@@ -43,26 +43,25 @@ const Home = () => {
       <StyledPartnerSection>
         <StyledPartnerSectionTitle>Alianzas</StyledPartnerSectionTitle>
         <StyledPartnersContainer>
-          <PartnerCard />
-          <PartnerCard />
-          <PartnerCard />
-          <PartnerCard />
-          <PartnerCard />
-          <PartnerCard />
+          {allies.map((ally) => (
+            <PartnerCard {...ally} key={ally.id} />
+          ))}
         </StyledPartnersContainer>
       </StyledPartnerSection>
       <StyledPartnerSection>
         <StyledPartnerSectionTitle>Sponsors</StyledPartnerSectionTitle>
         <StyledPartnersContainer>
-          <PartnerCard />
-          <PartnerCard />
-          <PartnerCard />
+          {sponsors.map((sponsor) => (
+            <PartnerCard {...sponsor} key={sponsor.id} />
+          ))}
         </StyledPartnersContainer>
       </StyledPartnerSection>
       <StyledPartnerSection>
         <StyledPartnerSectionTitle>Redes</StyledPartnerSectionTitle>
         <StyledPartnersContainer>
-          <PartnerCard />
+          {networks.map((network) => (
+            <PartnerCard {...network} key={network.id} />
+          ))}
         </StyledPartnersContainer>
       </StyledPartnerSection>
     </>
