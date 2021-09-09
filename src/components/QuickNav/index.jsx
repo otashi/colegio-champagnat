@@ -8,6 +8,9 @@ import {
   StyledIcon,
 } from './style';
 import { sitemap } from '../../utils/sitemap.js';
+import { routes } from '../../utils/routes';
+import { Link } from '../Link';
+import { Anchor } from '../Anchor';
 
 const QuickNav = ({ section }) => {
   const [menu, setMenu] = useState(false);
@@ -30,7 +33,13 @@ const QuickNav = ({ section }) => {
       {menu && (
         <StyledQuickNavList>
           {subsections.map((subsection) => (
-            <StyledQuickNavLinks href='/'>{subsection}</StyledQuickNavLinks>
+            <StyledQuickNavLinks>
+              {section !== 'Portales' ? (
+                <Link to={routes[subsection]}>{subsection}</Link>
+              ) : (
+                <Anchor href={routes[subsection]}>{subsection}</Anchor>
+              )}
+            </StyledQuickNavLinks>
           ))}
         </StyledQuickNavList>
       )}
