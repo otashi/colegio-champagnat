@@ -12,7 +12,7 @@ import { Blanket } from '../Blanket';
 import { Link } from '../Link';
 import { Anchor } from '../Anchor';
 
-const Menu = () => {
+const Menu = ({ handleClick }) => {
   const sections = Object.keys(sitemap);
 
   return (
@@ -21,12 +21,12 @@ const Menu = () => {
         {sections.map((section) => {
           return (
             <StyledSection>
-              <StyledSectionItem>
+              <StyledSectionItem onClick={handleClick}>
                 <Link to={routes[section]}>{section}</Link>
               </StyledSectionItem>
               <StyledSubsectionList>
                 {sitemap[section].map((subsection) => (
-                  <StyledSubsectionItem>
+                  <StyledSubsectionItem onClick={handleClick}>
                     {section !== 'Portales' ? (
                       <Link to={routes[subsection]}>{subsection}</Link>
                     ) : (
