@@ -11,10 +11,16 @@ import {
   StyledPartnersContainer,
 } from './style';
 
-const Home = ({ news = [], sponsors = [], allies = [], networks = [] }) => {
+const Home = ({
+  titular = [],
+  news = [],
+  sponsors = [],
+  allies = [],
+  networks = [],
+}) => {
   return (
     <>
-      <FullwideNews />
+      <FullwideNews news={titular} />
       <StyledLastNewsSection>
         <SectionTitle title='Últimas noticias' />
         <Carousel news={news} />
