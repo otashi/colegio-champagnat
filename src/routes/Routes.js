@@ -7,8 +7,8 @@ import { HistoriaContainer } from '../containers/About/HistoriaContainer';
 import { IdentidadContainer } from '../containers/About/IdentidadContainer';
 import { EvangelizacionMaristaContainer } from '../containers/About/EvangelizacionMaristaContainer';
 import { PeiContainer } from '../containers/About/PeiContainer';
-import { SistemaEvaluacionInstitucional } from '../pages/About/SistemaEvaluacionInstitucional';
-import { ProyectoEcologico } from '../pages/About/ProyectoEcologico';
+import { SistemaEvaluacionInstitucionalContainer } from '../containers/About/SistemaEvaluacionInstitucionalContainer';
+import { ProyectoEcologicoContainer } from '../containers/About/ProyectoEcologicoContainer';
 import { ManualConvivencia } from '../pages/About/ManualConvivencia';
 import { Protocolos } from '../pages/About/Protocolos';
 import { TratamientoDatos } from '../pages/About/TratamientoDatos';
@@ -41,7 +41,6 @@ import { PQRSF } from '../pages/Contact/PQRSF';
 import { RutasAtencion } from '../pages/Contact/RutasAtencion';
 import { Portales } from '../pages/Portales';
 import { NotFound } from '../pages/NotFound';
-import { SistemaEvaluacionInstitucionalContainer } from '../containers/About/SistemaEvaluacionInstitucionalContainer';
 
 const RoutesSwitch = () => {
   return (
@@ -73,7 +72,7 @@ const RoutesSwitch = () => {
       <Route
         exact
         path='/quienes-somos/proyecto-ecologico'
-        component={ProyectoEcologico}
+        component={ProyectoEcologicoContainer}
       />
       <Route
         exact
