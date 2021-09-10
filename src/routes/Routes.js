@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom';
 import { HomeContainer } from '../containers/HomeContainer';
 import { QuienesSomosContainer } from '../containers/About/QuienesSomosContainer';
 import { HistoriaContainer } from '../containers/About/HistoriaContainer';
-import { Identidad } from '../pages/About/Identidad';
+import { IdentidadContainer } from '../containers/About/IdentidadContainer';
 import { EvangelizacionMarista } from '../pages/About/EvangelizacionMarista';
 import { Pei } from '../pages/About/Pei';
 import { SistemaEvaluacionInstitucional } from '../pages/About/SistemaEvaluacionInstitucional';
@@ -53,7 +53,11 @@ const RoutesSwitch = () => {
         path='/quienes-somos/historia'
         component={HistoriaContainer}
       />
-      <Route exact path='/quienes-somos/identidad' component={Identidad} />
+      <Route
+        exact
+        path='/quienes-somos/identidad'
+        component={IdentidadContainer}
+      />
       <Route
         exact
         path='/quienes-somos/evangelizacion-marista'
