@@ -10,7 +10,7 @@ import { PeiContainer } from '../containers/About/PeiContainer';
 import { SistemaEvaluacionInstitucionalContainer } from '../containers/About/SistemaEvaluacionInstitucionalContainer';
 import { ProyectoEcologicoContainer } from '../containers/About/ProyectoEcologicoContainer';
 import { ManualConvivenciaContainer } from '../containers/About/ManualConvivenciaContainer';
-import { Protocolos } from '../pages/About/Protocolos';
+import { ProtocolosContainer } from '../containers/About/ProtocolosContainer';
 import { TratamientoDatos } from '../pages/About/TratamientoDatos';
 
 import { Admisiones } from '../pages/Admissions/Admisiones';
@@ -41,7 +41,7 @@ import { PQRSF } from '../pages/Contact/PQRSF';
 import { RutasAtencion } from '../pages/Contact/RutasAtencion';
 import { Portales } from '../pages/Portales';
 import { NotFound } from '../pages/NotFound';
-import { ProtocolosContainer } from '../containers/About/ProtocolosContainer';
+import { TratamientoDatosContainer } from '../containers/About/TratamientoDatosContainer';
 
 const RoutesSwitch = () => {
   return (
@@ -88,7 +88,7 @@ const RoutesSwitch = () => {
       <Route
         exact
         path='/quienes-somos/tratamiento-datos'
-        component={TratamientoDatos}
+        component={TratamientoDatosContainer}
       />
 
       <Route exact path='/admisiones' component={Admisiones} />
