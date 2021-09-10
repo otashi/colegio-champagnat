@@ -16,7 +16,7 @@ import { TratamientoDatosContainer } from '../containers/About/TratamientoDatosC
 import { AdmisionesContainer } from '../containers/Admissions/AdmisionesContainer';
 import { Pasos } from '../pages/Admissions/Pasos';
 import { Politicas } from '../pages/Admissions/Politicas';
-import { Info } from '../pages/Admissions/Info';
+import { InfoContainer } from '../containers/Admissions/InfoContainer';
 
 import { Noticias } from '../pages/News/Noticias';
 import { Boletines } from '../pages/News/Boletines';
@@ -41,7 +41,6 @@ import { PQRSF } from '../pages/Contact/PQRSF';
 import { RutasAtencion } from '../pages/Contact/RutasAtencion';
 import { Portales } from '../pages/Portales';
 import { NotFound } from '../pages/NotFound';
-import { InfoContainer } from '../containers/Admissions/InfoContainer';
 
 const RoutesSwitch = () => {
   return (
