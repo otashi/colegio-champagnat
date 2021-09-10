@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import { HomeContainer } from '../containers/HomeContainer';
-import { QuienesSomos } from '../pages/About/QuienesSomos';
+import { QuienesSomosContainer } from '../containers/About/QuienesSomosContainer';
 import { Historia } from '../pages/About/Historia';
 import { Identidad } from '../pages/About/Identidad';
 import { EvangelizacionMarista } from '../pages/About/EvangelizacionMarista';
@@ -47,7 +47,7 @@ const RoutesSwitch = () => {
     <Switch>
       <Route exact path='/' component={HomeContainer} />
 
-      <Route exact path='/quienes-somos' component={QuienesSomos} />
+      <Route exact path='/quienes-somos' component={QuienesSomosContainer} />
       <Route exact path='/quienes-somos/historia' component={Historia} />
       <Route exact path='/quienes-somos/identidad' component={Identidad} />
       <Route
