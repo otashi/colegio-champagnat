@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { API } from '../../utils/API';
 import { Home } from '../../pages/Home';
+import { usePartners } from '../../hooks/usePartners';
 
 const HomeContainer = () => {
   const [titular, setTitular] = useState([]);
@@ -19,26 +20,9 @@ const HomeContainer = () => {
       .then((articlesArr) => setNews(articlesArr));
   }, []);
 
-  const [sponsors, setSponsors] = useState([]);
-  useEffect(() => {
-    fetch(`${API}/sponsors`)
-      .then((response) => response.json())
-      .then((sponsorsArr) => setSponsors(sponsorsArr));
-  }, []);
-
-  const [allies, setAllies] = useState([]);
-  useEffect(() => {
-    fetch(`${API}/allies`)
-      .then((response) => response.json())
-      .then((alliesArr) => setAllies(alliesArr));
-  }, []);
-
-  const [networks, setNetworks] = useState([]);
-  useEffect(() => {
-    fetch(`${API}/networks`)
-      .then((response) => response.json())
-      .then((networksArr) => setNetworks(networksArr));
-  }, []);
+  const sponsors = usePartners('sponsors');
+  const allies = usePartners('allies');
+  const networks = usePartners('networks');
 
   return (
     <Home
