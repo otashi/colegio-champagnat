@@ -10,11 +10,11 @@ import {
   StyledCardNewsPublishedTime,
 } from './style';
 
-const CardNews = ({ title, category, photo, text = '', time }) => {
+const CardNews = ({ title, category, coverURL, content = '', time }) => {
   const textToRender = () => {
-    const textArray = text.split(' ');
+    const textArray = content.split(' ');
     if (textArray.length <= 25) {
-      return text;
+      return content;
     } else {
       return `${textArray.splice(0, 25).join(' ')}...`;
     }
@@ -22,10 +22,10 @@ const CardNews = ({ title, category, photo, text = '', time }) => {
 
   return (
     <StyledCardNewsContainer>
-      <CardPhoto coverURL={photo} />
+      <CardPhoto coverURL={coverURL} />
       <StyledCardNewsData>
         <StyledCardNewsContent>
-          <StyledCardNewsCategory>{category}</StyledCardNewsCategory>
+          <StyledCardNewsCategory>{category.category}</StyledCardNewsCategory>
           <StyledCardNewsTitle>{title}</StyledCardNewsTitle>
           <StyledCardNewsText>{textToRender()}</StyledCardNewsText>
         </StyledCardNewsContent>
