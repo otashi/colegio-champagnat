@@ -9,7 +9,7 @@ import { EvangelizacionMaristaContainer } from '../containers/About/Evangelizaci
 import { PeiContainer } from '../containers/About/PeiContainer';
 import { SistemaEvaluacionInstitucionalContainer } from '../containers/About/SistemaEvaluacionInstitucionalContainer';
 import { ProyectoEcologicoContainer } from '../containers/About/ProyectoEcologicoContainer';
-import { ManualConvivencia } from '../pages/About/ManualConvivencia';
+import { ManualConvivenciaContainer } from '../containers/About/ManualConvivenciaContainer';
 import { Protocolos } from '../pages/About/Protocolos';
 import { TratamientoDatos } from '../pages/About/TratamientoDatos';
 
@@ -77,7 +77,7 @@ const RoutesSwitch = () => {
       <Route
         exact
         path='/quienes-somos/manual-convivencia'
-        component={ManualConvivencia}
+        component={ManualConvivenciaContainer}
       />
       <Route exact path='/quienes-somos/protocolos' component={Protocolos} />
       <Route
