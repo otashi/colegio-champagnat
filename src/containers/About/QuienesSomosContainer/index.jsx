@@ -8,7 +8,7 @@ const QuienesSomosContainer = () => {
     fetch(`${API}/pages?route=quienes-somos`)
       .then((response) => response.json())
       .then((contentArr) => setContent(contentArr));
-  });
+  }, []);
 
   return <QuienesSomos content={content} />;
 };
