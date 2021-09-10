@@ -18,7 +18,7 @@ import { PasosContainer } from '../containers/Admissions/PasosContainer';
 import { PoliticasContainer } from '../containers/Admissions/PoliticasContainer';
 import { InfoContainer } from '../containers/Admissions/InfoContainer';
 
-import { Noticias } from '../pages/News/Noticias';
+import { NoticiasContainer } from '../containers/News/NoticiasContainer';
 import { Boletines } from '../pages/News/Boletines';
 import { CuartoPiso } from '../pages/News/CuartoPiso';
 import { Articulo } from '../pages/News/Articulo';
@@ -99,7 +99,7 @@ const RoutesSwitch = () => {
       />
       <Route exact path='/admisiones/info' component={InfoContainer} />
 
-      <Route exact path='/noticias' component={Noticias} />
+      <Route exact path='/noticias' component={NoticiasContainer} />
       <Route exact path='/noticias/boletines' component={Boletines} />
       <Route exact path='/noticias/cuarto-piso' component={CuartoPiso} />
       <Route exact path='/articulo/:id' component={Articulo} />
