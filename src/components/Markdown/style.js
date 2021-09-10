@@ -7,7 +7,7 @@ const StyledMarkdown = styled.div`
     font-size: 2rem;
     line-height: 2.4rem;
     font-weight: normal;
-    margin: 0.8rem 0;
+    margin: 1.6rem 0 0.8rem;
   }
 
   h2 {
