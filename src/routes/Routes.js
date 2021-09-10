@@ -11,7 +11,7 @@ import { SistemaEvaluacionInstitucionalContainer } from '../containers/About/Sis
 import { ProyectoEcologicoContainer } from '../containers/About/ProyectoEcologicoContainer';
 import { ManualConvivenciaContainer } from '../containers/About/ManualConvivenciaContainer';
 import { ProtocolosContainer } from '../containers/About/ProtocolosContainer';
-import { TratamientoDatos } from '../pages/About/TratamientoDatos';
+import { TratamientoDatosContainer } from '../containers/About/TratamientoDatosContainer';
 
 import { Admisiones } from '../pages/Admissions/Admisiones';
 import { Pasos } from '../pages/Admissions/Pasos';
@@ -41,7 +41,6 @@ import { PQRSF } from '../pages/Contact/PQRSF';
 import { RutasAtencion } from '../pages/Contact/RutasAtencion';
 import { Portales } from '../pages/Portales';
 import { NotFound } from '../pages/NotFound';
-import { TratamientoDatosContainer } from '../containers/About/TratamientoDatosContainer';
 
 const RoutesSwitch = () => {
   return (
