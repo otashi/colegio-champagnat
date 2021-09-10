@@ -7,7 +7,7 @@ const usePartners = (type) => {
     fetch(`${API}/${type}`)
       .then((response) => response.json())
       .then((partnersArr) => setPartners(partnersArr));
-  }, []);
+  }, [type]);
 
   return partners;
 };
