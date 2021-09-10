@@ -5,7 +5,9 @@ import { Home } from '../../pages/Home';
 const HomeContainer = () => {
   const [titular, setTitular] = useState([]);
   useEffect(() => {
-    fetch(`${API}/articles?category.category=Titular&_limit=1`)
+    fetch(
+      `${API}/articles?_sort=created_at:DESC&category.category=Titular&_limit=1`
+    )
       .then((response) => response.json())
       .then((titularArr) => setTitular(titularArr));
   }, []);
