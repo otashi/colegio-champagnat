@@ -3,6 +3,7 @@ import { FullwidePhoto } from '../../../components/FullwidePhoto';
 import { QuickNav } from '../../../components/QuickNav';
 import { Section } from '../../../components/Section';
 import { SectionTitle } from '../../../components/SectionTitle';
+import { Markdown } from '../../../components/Markdown';
 
 const QuienesSomos = ({ content = [] }) => {
   if (content.length >= 1) {
@@ -12,7 +13,7 @@ const QuienesSomos = ({ content = [] }) => {
         <QuickNav section='Quienes somos' />
         <Section>
           <SectionTitle title='Quiénes somos' />
-          <p>{content[0].content}</p>
+          <Markdown linkTarget='_blank'>{content[0].content}</Markdown>
         </Section>
       </>
     );
