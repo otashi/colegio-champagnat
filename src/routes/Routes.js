@@ -41,6 +41,7 @@ import { PQRSF } from '../pages/Contact/PQRSF';
 import { RutasAtencion } from '../pages/Contact/RutasAtencion';
 import { Portales } from '../pages/Portales';
 import { NotFound } from '../pages/NotFound';
+import { SistemaEvaluacionInstitucionalContainer } from '../containers/About/SistemaEvaluacionInstitucionalContainer';
 
 const RoutesSwitch = () => {
   return (
@@ -67,7 +68,7 @@ const RoutesSwitch = () => {
       <Route
         exact
         path='/quienes-somos/sistema-evaluacion-institucional'
-        component={SistemaEvaluacionInstitucional}
+        component={SistemaEvaluacionInstitucionalContainer}
       />
       <Route
         exact
