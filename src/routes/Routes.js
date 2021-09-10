@@ -41,6 +41,7 @@ import { PQRSF } from '../pages/Contact/PQRSF';
 import { RutasAtencion } from '../pages/Contact/RutasAtencion';
 import { Portales } from '../pages/Portales';
 import { NotFound } from '../pages/NotFound';
+import { ProtocolosContainer } from '../containers/About/ProtocolosContainer';
 
 const RoutesSwitch = () => {
   return (
@@ -79,7 +80,11 @@ const RoutesSwitch = () => {
         path='/quienes-somos/manual-convivencia'
         component={ManualConvivenciaContainer}
       />
-      <Route exact path='/quienes-somos/protocolos' component={Protocolos} />
+      <Route
+        exact
+        path='/quienes-somos/protocolos'
+        component={ProtocolosContainer}
+      />
       <Route
         exact
         path='/quienes-somos/tratamiento-datos'
