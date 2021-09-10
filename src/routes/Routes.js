@@ -41,6 +41,7 @@ import { PQRSF } from '../pages/Contact/PQRSF';
 import { RutasAtencion } from '../pages/Contact/RutasAtencion';
 import { Portales } from '../pages/Portales';
 import { NotFound } from '../pages/NotFound';
+import { InfoContainer } from '../containers/Admissions/InfoContainer';
 
 const RoutesSwitch = () => {
   return (
@@ -93,7 +94,7 @@ const RoutesSwitch = () => {
       <Route exact path='/admisiones' component={AdmisionesContainer} />
       <Route exact path='/admisiones/pasos' component={Pasos} />
       <Route exact path='/admisiones/politicas' component={Politicas} />
-      <Route exact path='/admisiones/info' component={Info} />
+      <Route exact path='/admisiones/info' component={InfoContainer} />
 
       <Route exact path='/noticias' component={Noticias} />
       <Route exact path='/noticias/boletines' component={Boletines} />
