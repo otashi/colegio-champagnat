@@ -33,7 +33,7 @@ const QuickNav = ({ section }) => {
       {menu && (
         <StyledQuickNavList>
           {subsections.map((subsection) => (
-            <StyledQuickNavLinks>
+            <StyledQuickNavLinks key={subsection}>
               {section !== 'Portales' ? (
                 <Link to={routes[subsection]}>{subsection}</Link>
               ) : (

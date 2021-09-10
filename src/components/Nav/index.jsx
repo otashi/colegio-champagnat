@@ -34,7 +34,7 @@ const Nav = () => {
         <StyledNavLinks>
           <StyledNavSectionsList>
             {sections.map((section) => (
-              <StyledNavSectionItem>
+              <StyledNavSectionItem key={section}>
                 <Link to={routes[section]}>{section}</Link>
               </StyledNavSectionItem>
             ))}
