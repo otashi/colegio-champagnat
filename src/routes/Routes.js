@@ -13,7 +13,7 @@ import { ManualConvivenciaContainer } from '../containers/About/ManualConvivenci
 import { ProtocolosContainer } from '../containers/About/ProtocolosContainer';
 import { TratamientoDatosContainer } from '../containers/About/TratamientoDatosContainer';
 
-import { Admisiones } from '../pages/Admissions/Admisiones';
+import { AdmisionesContainer } from '../containers/Admissions/AdmisionesContainer';
 import { Pasos } from '../pages/Admissions/Pasos';
 import { Politicas } from '../pages/Admissions/Politicas';
 import { Info } from '../pages/Admissions/Info';
@@ -90,7 +90,7 @@ const RoutesSwitch = () => {
         component={TratamientoDatosContainer}
       />
 
-      <Route exact path='/admisiones' component={Admisiones} />
+      <Route exact path='/admisiones' component={AdmisionesContainer} />
       <Route exact path='/admisiones/pasos' component={Pasos} />
       <Route exact path='/admisiones/politicas' component={Politicas} />
       <Route exact path='/admisiones/info' component={Info} />
