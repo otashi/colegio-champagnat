@@ -1,15 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useContent } from '../../../hooks/useContent';
 import { QuienesSomos } from '../../../pages/About/QuienesSomos';
-import { API } from '../../../utils/API';
 
 const QuienesSomosContainer = () => {
-  const [content, setContent] = useState([]);
-  useEffect(() => {
-    fetch(`${API}/pages?route=quienes-somos`)
-      .then((response) => response.json())
-      .then((contentArr) => setContent(contentArr));
-  }, []);
-
+  const { content } = useContent('quienes-somos');
   return <QuienesSomos content={content} />;
 };
 
