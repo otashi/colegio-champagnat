@@ -12,7 +12,7 @@ const QuienesSomos = ({ content = [] }) => {
         <FullwidePhoto coverURL={content[0].coverURL} />
         <QuickNav section='Quienes somos' />
         <Section>
-          <SectionTitle title='Quiénes somos' />
+          <SectionTitle title={content[0].title} />
           <Markdown linkTarget='_blank'>{content[0].content}</Markdown>
         </Section>
       </>
