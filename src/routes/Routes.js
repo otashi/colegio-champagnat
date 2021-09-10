@@ -14,7 +14,7 @@ import { ProtocolosContainer } from '../containers/About/ProtocolosContainer';
 import { TratamientoDatosContainer } from '../containers/About/TratamientoDatosContainer';
 
 import { AdmisionesContainer } from '../containers/Admissions/AdmisionesContainer';
-import { Pasos } from '../pages/Admissions/Pasos';
+import { PasosContainer } from '../containers/Admissions/PasosContainer';
 import { Politicas } from '../pages/Admissions/Politicas';
 import { InfoContainer } from '../containers/Admissions/InfoContainer';
 
@@ -91,7 +91,7 @@ const RoutesSwitch = () => {
       />
 
       <Route exact path='/admisiones' component={AdmisionesContainer} />
-      <Route exact path='/admisiones/pasos' component={Pasos} />
+      <Route exact path='/admisiones/pasos' component={PasosContainer} />
       <Route exact path='/admisiones/politicas' component={Politicas} />
       <Route exact path='/admisiones/info' component={InfoContainer} />
 
