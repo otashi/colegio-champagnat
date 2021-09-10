@@ -15,7 +15,7 @@ import { TratamientoDatosContainer } from '../containers/About/TratamientoDatosC
 
 import { AdmisionesContainer } from '../containers/Admissions/AdmisionesContainer';
 import { PasosContainer } from '../containers/Admissions/PasosContainer';
-import { Politicas } from '../pages/Admissions/Politicas';
+import { PoliticasContainer } from '../containers/Admissions/PoliticasContainer';
 import { InfoContainer } from '../containers/Admissions/InfoContainer';
 
 import { Noticias } from '../pages/News/Noticias';
@@ -92,7 +92,11 @@ const RoutesSwitch = () => {
 
       <Route exact path='/admisiones' component={AdmisionesContainer} />
       <Route exact path='/admisiones/pasos' component={PasosContainer} />
-      <Route exact path='/admisiones/politicas' component={Politicas} />
+      <Route
+        exact
+        path='/admisiones/politicas'
+        component={PoliticasContainer}
+      />
       <Route exact path='/admisiones/info' component={InfoContainer} />
 
       <Route exact path='/noticias' component={Noticias} />
