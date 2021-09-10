@@ -5,7 +5,7 @@ import { HomeContainer } from '../containers/HomeContainer';
 import { QuienesSomosContainer } from '../containers/About/QuienesSomosContainer';
 import { HistoriaContainer } from '../containers/About/HistoriaContainer';
 import { IdentidadContainer } from '../containers/About/IdentidadContainer';
-import { EvangelizacionMarista } from '../pages/About/EvangelizacionMarista';
+import { EvangelizacionMaristaContainer } from '../containers/About/EvangelizacionMaristaContainer';
 import { Pei } from '../pages/About/Pei';
 import { SistemaEvaluacionInstitucional } from '../pages/About/SistemaEvaluacionInstitucional';
 import { ProyectoEcologico } from '../pages/About/ProyectoEcologico';
@@ -61,7 +61,7 @@ const RoutesSwitch = () => {
       <Route
         exact
         path='/quienes-somos/evangelizacion-marista'
-        component={EvangelizacionMarista}
+        component={EvangelizacionMaristaContainer}
       />
       <Route exact path='/quienes-somos/pei' component={Pei} />
       <Route
