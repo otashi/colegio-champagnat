@@ -16,7 +16,7 @@ const Boletines = ({ titular, news, handleClick }) => {
         <SectionTitle title='Boletines' />
         <SectionCards>
           {news.map((article) => (
-            <CardNews {...article} />
+            <CardNews {...article} key={article.id} />
           ))}
         </SectionCards>
         <Button label='Cargar más' handleClick={handleClick} />
