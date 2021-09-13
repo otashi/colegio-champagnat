@@ -10,7 +10,7 @@ const Portales = ({ content }) => {
     return (
       <>
         <FullwidePhoto coverURL={content[0].coverURL} />
-        <QuickNav section='Contacto' />
+        <QuickNav section='Portales' />
         <Section>
           <SectionTitle title={content[0].title} />
           <Markdown linkTarget='_blank'>{content[0].content}</Markdown>
