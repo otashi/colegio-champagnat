@@ -20,13 +20,13 @@ const Menu = ({ handleClick }) => {
       <StyledMenu>
         {sections.map((section) => {
           return (
-            <StyledSection>
+            <StyledSection key={section}>
               <StyledSectionItem onClick={handleClick}>
                 <Link to={routes[section]}>{section}</Link>
               </StyledSectionItem>
               <StyledSubsectionList>
                 {sitemap[section].map((subsection) => (
-                  <StyledSubsectionItem onClick={handleClick}>
+                  <StyledSubsectionItem onClick={handleClick} key={subsection}>
                     {section !== 'Portales' ? (
                       <Link to={routes[subsection]}>{subsection}</Link>
                     ) : (
