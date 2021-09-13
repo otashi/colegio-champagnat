@@ -30,7 +30,7 @@ import { RecursosContainer } from '../containers/Students/RecursosContainer';
 import { BibliotecaContainer } from '../containers/Students/BibliotecaContainer';
 
 import { PadresContainer } from '../containers/Parents/PadresContainer';
-import { Circulares } from '../pages/Parents/Circulares';
+import { CircularesContainer } from '../containers/Parents/CircularesContainer';
 import { ContactoDocente } from '../pages/Parents/ContactoDocente';
 import { ConsejoPadres } from '../pages/Parents/ConsejoPadres';
 import { Rutas } from '../pages/Parents/Rutas';
@@ -127,7 +127,7 @@ const RoutesSwitch = () => {
       />
 
       <Route exact path='/padres' component={PadresContainer} />
-      <Route exact path='/padres/circulares' component={Circulares} />
+      <Route exact path='/padres/circulares' component={CircularesContainer} />
       <Route
         exact
         path='/padres/contacto-docente'
