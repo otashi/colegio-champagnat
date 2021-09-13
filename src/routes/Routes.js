@@ -37,9 +37,8 @@ import { RutasContainer } from '../containers/Parents/RutasContainer';
 import { UtilesContainer } from '../containers/Parents/UtilesContainer';
 import { AsofamiliaContainer } from '../containers/AsofamiliaContainer';
 
-
 import { ContactoContainer } from '../containers/Contact/ContactoContainer';
-import { PQRSF } from '../pages/Contact/PQRSF';
+import { PQRSFContainer } from '../containers/Contact/PQRSFContainer';
 import { RutasAtencion } from '../pages/Contact/RutasAtencion';
 import { Portales } from '../pages/Portales';
 import { NotFound } from '../pages/NotFound';
@@ -146,7 +145,7 @@ const RoutesSwitch = () => {
       <Route exact path='/asofamilia' component={AsofamiliaContainer} />
 
       <Route exact path='/contacto' component={ContactoContainer} />
-      <Route exact path='/contacto/pqrsf' component={PQRSF} />
+      <Route exact path='/contacto/pqrsf' component={PQRSFContainer} />
       <Route exact path='/contacto/rutas-atencion' component={RutasAtencion} />
 
       <Route exact path='/portales' component={Portales} />
