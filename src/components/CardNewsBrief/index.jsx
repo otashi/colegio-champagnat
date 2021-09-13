@@ -6,18 +6,21 @@ import {
   StyledCardNewsBriefTitle,
 } from './style';
 import { CardPhoto } from '../CardPhoto';
+import { Link } from '../Link';
 
-const CardNewsBrief = ({ title, category, coverURL }) => {
+const CardNewsBrief = ({ title, category, coverURL, id }) => {
   return (
-    <StyledCardNewsBriefContainer>
-      <CardPhoto coverURL={coverURL} />
-      <StyledCardNewsBriefData>
-        <StyledCardNewsBriefCategory>
-          {category.category}
-        </StyledCardNewsBriefCategory>
-        <StyledCardNewsBriefTitle>{title}</StyledCardNewsBriefTitle>
-      </StyledCardNewsBriefData>
-    </StyledCardNewsBriefContainer>
+    <Link to={`/articulo/${id}`}>
+      <StyledCardNewsBriefContainer>
+        <CardPhoto coverURL={coverURL} />
+        <StyledCardNewsBriefData>
+          <StyledCardNewsBriefCategory>
+            {category.category}
+          </StyledCardNewsBriefCategory>
+          <StyledCardNewsBriefTitle>{title}</StyledCardNewsBriefTitle>
+        </StyledCardNewsBriefData>
+      </StyledCardNewsBriefContainer>
+    </Link>
   );
 };
 
