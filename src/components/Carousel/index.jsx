@@ -5,8 +5,8 @@ import { StyledCarousel } from './style';
 const Carousel = ({ news = [] }) => {
   return (
     <StyledCarousel>
-      {news.map((item) => (
-        <CardNewsBrief {...item} />
+      {news.map((article) => (
+        <CardNewsBrief {...article} key={article.id} />
       ))}
     </StyledCarousel>
   );
