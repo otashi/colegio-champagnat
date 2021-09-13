@@ -9,8 +9,8 @@ const StyledCardPhotoContainer = styled.div`
   box-shadow: 0 0.3rem 0.5rem 0 var(--n50a);
 
   @media screen and (min-width: 1024px) {
-    width: 20rem;
-    height: 20rem;
+    width: 16rem;
+    height: 16rem;
   }
 `;
 
