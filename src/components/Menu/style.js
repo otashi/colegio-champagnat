@@ -4,14 +4,16 @@ const StyledMenu = styled.ul`
   display: grid;
   list-style: none;
   margin-left: 1.6rem;
-  padding: 5.2rem 0;
+  padding: 8rem 0 0;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 600px) {
+    max-width: 600px;
+    margin: 0 auto;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @media screen and (min-width: 1024px) {
-    max-width: 1024px;
+  @media screen and (min-width: 900px) {
+    max-width: 900px;
     grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
   }
