@@ -8,9 +8,11 @@ const StyledFullwidePhotoContainer = styled.div`
   max-width: 1026px;
   max-height: 634px;
   margin: 0 auto;
+  overflow: hidden;
 
   @media screen and (min-width: 1026px) {
     margin: 3.2rem auto 0;
+    border-radius: 1.6rem;
   }
 `;
 
