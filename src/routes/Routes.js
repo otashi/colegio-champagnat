@@ -31,7 +31,7 @@ import { BibliotecaContainer } from '../containers/Students/BibliotecaContainer'
 
 import { PadresContainer } from '../containers/Parents/PadresContainer';
 import { CircularesContainer } from '../containers/Parents/CircularesContainer';
-import { ContactoDocente } from '../pages/Parents/ContactoDocente';
+import { ContactoDocenteContainer } from '../containers/Parents/ContactoDocenteContainer';
 import { ConsejoPadres } from '../pages/Parents/ConsejoPadres';
 import { Rutas } from '../pages/Parents/Rutas';
 import { Utiles } from '../pages/Parents/Utiles';
@@ -131,7 +131,7 @@ const RoutesSwitch = () => {
       <Route
         exact
         path='/padres/contacto-docente'
-        component={ContactoDocente}
+        component={ContactoDocenteContainer}
       />
       <Route exact path='/padres/consejo-padres' component={ConsejoPadres} />
       <Route exact path='/padres/rutas' component={Rutas} />
