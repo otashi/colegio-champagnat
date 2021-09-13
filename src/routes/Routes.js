@@ -29,7 +29,7 @@ import { CalendarioContainer } from '../containers/Students/CalendarioContainer'
 import { RecursosContainer } from '../containers/Students/RecursosContainer';
 import { BibliotecaContainer } from '../containers/Students/BibliotecaContainer';
 
-import { Padres } from '../pages/Parents/Padres';
+import { PadresContainer } from '../containers/Parents/PadresContainer';
 import { Circulares } from '../pages/Parents/Circulares';
 import { ContactoDocente } from '../pages/Parents/ContactoDocente';
 import { ConsejoPadres } from '../pages/Parents/ConsejoPadres';
@@ -126,7 +126,7 @@ const RoutesSwitch = () => {
         component={BibliotecaContainer}
       />
 
-      <Route exact path='/padres' component={Padres} />
+      <Route exact path='/padres' component={PadresContainer} />
       <Route exact path='/padres/circulares' component={Circulares} />
       <Route
         exact
