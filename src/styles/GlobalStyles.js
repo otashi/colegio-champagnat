@@ -47,6 +47,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     padding-top: 5.5rem;
+    background-color: var(--n10);
     -webkit-font-smoothing: antialiased;
   }
 `;
