@@ -5,6 +5,10 @@ const StyledSection = styled.section`
   padding: 1.6rem 1.6rem 3.2rem;
   max-width: 1024px;
   margin: 0 auto;
+
+  @media screen and (min-width: 1024px) {
+    min-width: 1024px;
+  }
 `;
 
 export { StyledSection };
