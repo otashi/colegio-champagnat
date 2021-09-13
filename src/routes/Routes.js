@@ -35,13 +35,12 @@ import { ContactoDocenteContainer } from '../containers/Parents/ContactoDocenteC
 import { ConsejoPadresContainer } from '../containers/Parents/ConsejoPadresContainer';
 import { RutasContainer } from '../containers/Parents/RutasContainer';
 import { UtilesContainer } from '../containers/Parents/UtilesContainer';
-import { Asofamilia } from '../pages/Asofamilia';
+import { AsofamiliaContainer } from '../containers/AsofamiliaContainer';
 import { Contacto } from '../pages/Contact/Contacto';
 import { PQRSF } from '../pages/Contact/PQRSF';
 import { RutasAtencion } from '../pages/Contact/RutasAtencion';
 import { Portales } from '../pages/Portales';
 import { NotFound } from '../pages/NotFound';
-import { AsofamiliaContainer } from '../containers/AsofamiliaContainer';
 
 const RoutesSwitch = () => {
   return (
