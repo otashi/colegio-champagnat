@@ -10,7 +10,7 @@ const Padres = ({ content }) => {
     return (
       <>
         <FullwidePhoto coverURL={content[0].coverURL} />
-        <QuickNav section='Estudiantes' />
+        <QuickNav section='Padres' />
         <Section>
           <SectionTitle title={content[0].title} />
           <Markdown linkTarget='_blank'>{content[0].content}</Markdown>
