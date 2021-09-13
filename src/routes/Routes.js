@@ -41,6 +41,7 @@ import { PQRSF } from '../pages/Contact/PQRSF';
 import { RutasAtencion } from '../pages/Contact/RutasAtencion';
 import { Portales } from '../pages/Portales';
 import { NotFound } from '../pages/NotFound';
+import { AsofamiliaContainer } from '../containers/AsofamiliaContainer';
 
 const RoutesSwitch = () => {
   return (
@@ -141,7 +142,7 @@ const RoutesSwitch = () => {
       <Route exact path='/padres/rutas' component={RutasContainer} />
       <Route exact path='/padres/utiles' component={UtilesContainer} />
 
-      <Route exact path='/asofamilia' component={Asofamilia} />
+      <Route exact path='/asofamilia' component={AsofamiliaContainer} />
 
       <Route exact path='/contacto' component={Contacto} />
       <Route exact path='/contacto/pqrsf' component={PQRSF} />
