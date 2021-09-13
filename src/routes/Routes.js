@@ -24,7 +24,7 @@ import { CuartoPisoContainer } from '../containers/News/CuartoPisoContainer';
 import { Articulo } from '../pages/News/Articulo';
 
 import { EstudiantesContainer } from '../containers/Students/EstudiantesContainer';
-import { CampusVirtual } from '../pages/Students/CampusVirtual';
+import { CampusVirtualContainer } from '../containers/Students/CampusVirtualContainer';
 import { Calendario } from '../pages/Students/Calendario';
 import { Recursos } from '../pages/Students/Recursos';
 import { Biblioteca } from '../pages/Students/Biblioteca';
@@ -112,7 +112,7 @@ const RoutesSwitch = () => {
       <Route
         exact
         path='/estudiantes/campus-virtual'
-        component={CampusVirtual}
+        component={CampusVirtualContainer}
       />
       <Route exact path='/estudiantes/calendario' component={Calendario} />
       <Route exact path='/estudiantes/recursos' component={Recursos} />
