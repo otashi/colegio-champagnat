@@ -6,7 +6,7 @@ const StyledCardNewsContainer = styled.div`
   column-gap: 1.6rem;
 
   @media screen and (min-width: 1024px) {
-    grid-template-columns: 20rem 265px;
+    grid-template-columns: 16rem 300px;
   }
 `;
 
@@ -36,7 +36,7 @@ const StyledCardNewsTitle = styled.h2`
   line-height: 2rem;
 
   @media screen and (min-width: 1024px) {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 2.4rem;
   }
 `;
