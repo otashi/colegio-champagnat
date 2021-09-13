@@ -38,7 +38,7 @@ import { UtilesContainer } from '../containers/Parents/UtilesContainer';
 import { AsofamiliaContainer } from '../containers/AsofamiliaContainer';
 
 
-import { ContactoContainer } from '../containers/Contact';
+import { ContactoContainer } from '../containers/Contact/ContactoContainer';
 import { PQRSF } from '../pages/Contact/PQRSF';
 import { RutasAtencion } from '../pages/Contact/RutasAtencion';
 import { Portales } from '../pages/Portales';
