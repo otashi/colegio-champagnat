@@ -13,10 +13,11 @@ import {
   RadioInput,
   TextAreaInput,
 } from '../../../components/Inputs';
+import { Page } from '../../../components/Page';
 
 const PQRSF = ({ content }) => {
   return (
-    <>
+    <Page>
       {content.length >= 1 && <FullwidePhoto coverURL={content[0].coverURL} />}
       <QuickNav section='Contacto' />
       <Section>
@@ -62,7 +63,7 @@ const PQRSF = ({ content }) => {
           <Button label='Enviar' />
         </StyledForm>
       </Section>
-    </>
+    </Page>
   );
 };
 

@@ -6,10 +6,11 @@ import { Button } from '../../../components/Buttons';
 import { SectionCards } from '../../../components/SectionCards';
 import { CardNews } from '../../../components/CardNews';
 import { FullwideNews } from '../../../components/FullwideNews';
+import { Page } from '../../../components/Page';
 
 const Boletines = ({ titular, news, handleClick }) => {
   return (
-    <>
+    <Page>
       <FullwideNews news={titular} />
       <QuickNav section='Noticias' />
       <Section>
@@ -21,7 +22,7 @@ const Boletines = ({ titular, news, handleClick }) => {
         </SectionCards>
         <Button label='Cargar más' handleClick={handleClick} />
       </Section>
-    </>
+    </Page>
   );
 };
 
