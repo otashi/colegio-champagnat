@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FullwidePhoto } from '../../../components/FullwidePhoto';
+import React from 'react';
+import { FullwideNews } from '../../../components/FullwideNews';
 import { QuickNav } from '../../../components/QuickNav';
 import { Section } from '../../../components/Section';
 import { SectionTitle } from '../../../components/SectionTitle';
@@ -7,34 +7,19 @@ import { Button } from '../../../components/Buttons';
 import { SectionCards } from '../../../components/SectionCards';
 import { CardNews } from '../../../components/CardNews';
 
-const CuartoPiso = () => {
-  const [news] = useState([
-    {
-      title: 'Title of the article',
-      category: 'Category',
-      text:
-        'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia....',
-    },
-    {
-      title: 'Title of the article',
-      category: 'Category',
-      text:
-        'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia....',
-    },
-  ]);
-
+const CuartoPiso = ({ titular, news, handleClick }) => {
   return (
     <>
-      <FullwidePhoto />
+      <FullwideNews news={titular} />
       <QuickNav section='Noticias' />
       <Section>
         <SectionTitle title='Desde el cuarto piso' />
         <SectionCards>
           {news.map((article) => (
-            <CardNews {...article} />
+            <CardNews {...article} key={article.id} />
           ))}
         </SectionCards>
-        <Button label='Cargar más' />
+        <Button label='Cargar más' handleClick={handleClick} />
       </Section>
     </>
   );

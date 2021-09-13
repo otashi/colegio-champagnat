@@ -20,7 +20,7 @@ import { InfoContainer } from '../containers/Admissions/InfoContainer';
 
 import { NoticiasContainer } from '../containers/News/NoticiasContainer';
 import { BoletinesContainer } from '../containers/News/BoletinesContainer';
-import { CuartoPiso } from '../pages/News/CuartoPiso';
+import { CuartoPisoContainer } from '../containers/News/CuartoPisoContainer';
 import { Articulo } from '../pages/News/Articulo';
 
 import { Estudiantes } from '../pages/Students/Estudiantes';
@@ -101,7 +101,11 @@ const RoutesSwitch = () => {
 
       <Route exact path='/noticias' component={NoticiasContainer} />
       <Route exact path='/noticias/boletines' component={BoletinesContainer} />
-      <Route exact path='/noticias/cuarto-piso' component={CuartoPiso} />
+      <Route
+        exact
+        path='/noticias/cuarto-piso'
+        component={CuartoPisoContainer}
+      />
       <Route exact path='/articulo/:id' component={Articulo} />
 
       <Route exact path='/estudiantes' component={Estudiantes} />
