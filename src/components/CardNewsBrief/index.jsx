@@ -8,11 +8,11 @@ import {
 import { CardPhoto } from '../CardPhoto';
 import { Link } from '../Link';
 
-const CardNewsBrief = ({ title, category, coverURL, id }) => {
+const CardNewsBrief = ({ title, category, coverURL, setPhotoFilter, id }) => {
   return (
     <Link to={`/articulo/${id}`}>
       <StyledCardNewsBriefContainer>
-        <CardPhoto coverURL={coverURL} />
+        <CardPhoto coverURL={coverURL} setPhotoFilter={setPhotoFilter} />
         <StyledCardNewsBriefData>
           <StyledCardNewsBriefCategory>
             {category.category}

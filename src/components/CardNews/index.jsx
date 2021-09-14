@@ -11,7 +11,15 @@ import {
   StyledCardNewsPublishedTime,
 } from './style';
 
-const CardNews = ({ title, category, coverURL, content = '', time, id }) => {
+const CardNews = ({
+  title,
+  category,
+  coverURL,
+  content = '',
+  time,
+  setPhotoFilter,
+  id,
+}) => {
   const textToRender = () => {
     const textArray = content.split(' ');
     if (textArray.length <= 25) {
@@ -24,7 +32,7 @@ const CardNews = ({ title, category, coverURL, content = '', time, id }) => {
   return (
     <Link to={`/articulo/${id}`}>
       <StyledCardNewsContainer>
-        <CardPhoto coverURL={coverURL} />
+        <CardPhoto coverURL={coverURL} setPhotoFilter={setPhotoFilter} />
         <StyledCardNewsData>
           <StyledCardNewsContent>
             <StyledCardNewsCategory>{category.category}</StyledCardNewsCategory>
