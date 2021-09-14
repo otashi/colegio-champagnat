@@ -21,7 +21,8 @@ import { InfoContainer } from '../containers/Admissions/InfoContainer';
 import { NoticiasContainer } from '../containers/News/NoticiasContainer';
 import { BoletinesContainer } from '../containers/News/BoletinesContainer';
 import { CuartoPisoContainer } from '../containers/News/CuartoPisoContainer';
-import { Articulo } from '../pages/News/Articulo';
+
+import { ArticuloContainer } from '../containers/Articulo';
 
 import { EstudiantesContainer } from '../containers/Students/EstudiantesContainer';
 import { CampusVirtualContainer } from '../containers/Students/CampusVirtualContainer';
@@ -109,7 +110,8 @@ const RoutesSwitch = () => {
         path='/noticias/cuarto-piso'
         component={CuartoPisoContainer}
       />
-      <Route exact path='/articulo/:id' component={Articulo} />
+
+      <Route exact path='/articulo/:id' component={ArticuloContainer} />
 
       <Route exact path='/estudiantes' component={EstudiantesContainer} />
       <Route

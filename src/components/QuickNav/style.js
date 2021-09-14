@@ -4,6 +4,10 @@ const StyledQuickNav = styled.div`
   background-color: var(--b500);
   color: var(--n0);
   padding: 2.4rem 1.6rem;
+
+  @media screen and (min-width: 1024px) {
+    grid-row-start: 1;
+  }
 `;
 
 const StyledQuickNavHeader = styled.div`
@@ -11,6 +15,8 @@ const StyledQuickNavHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  margin: 0 auto;
+  max-width: 1024px;
 `;
 
 const StyledQuickNavTitle = styled.h3`
@@ -22,7 +28,8 @@ const StyledQuickNavTitle = styled.h3`
 
 const StyledQuickNavList = styled.ul`
   list-style: none;
-  margin: 3.2rem 0 0;
+  margin: 3.2rem auto 0;
+  max-width: 1024px;
   padding: 0 0 0 0.8rem;
 
   @media screen and (min-width: 1024px) {

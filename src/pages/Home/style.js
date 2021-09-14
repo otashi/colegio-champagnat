@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 const StyledLastNewsSection = styled.section`
   padding: 1.6rem 0 1.6rem 1.6rem;
+  max-width: 1026px;
+  margin: 0 auto;
 `;
 
 const StyledPartnerSection = styled.section`

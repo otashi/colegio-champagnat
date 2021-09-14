@@ -7,11 +7,12 @@ import { CardNews } from '../../../components/CardNews';
 import { Button } from '../../../components/Buttons';
 import { Markdown } from '../../../components/Markdown';
 import { FullwideNews } from '../../../components/FullwideNews';
+import { Page } from '../../../components/Page';
 
 const ConsejoPadres = ({ content, titular, news, handleClick }) => {
   if (content.length >= 1) {
     return (
-      <>
+      <Page>
         <FullwideNews news={titular} />
         <QuickNav section='Padres' />
         <Section>
@@ -24,7 +25,7 @@ const ConsejoPadres = ({ content, titular, news, handleClick }) => {
           </SectionCards>
           <Button label='Cargar más' handleClick={handleClick} />
         </Section>
-      </>
+      </Page>
     );
   } else {
     return <></>;

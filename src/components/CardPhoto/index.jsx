@@ -2,11 +2,11 @@ import React from 'react';
 import { PhotoFilter } from '../PhotoFilter';
 import { StyledCardPhotoContainer, StyledCardPhoto } from './style';
 
-const CardPhoto = ({ coverURL }) => {
+const CardPhoto = ({ coverURL, setPhotoFilter, setContain }) => {
   return (
     <StyledCardPhotoContainer>
-      <PhotoFilter />
-      <StyledCardPhoto src={coverURL} />
+      {setPhotoFilter && <PhotoFilter />}
+      <StyledCardPhoto src={coverURL} contain={setContain} />
     </StyledCardPhotoContainer>
   );
 };

@@ -5,12 +5,16 @@ import { Section } from '../../../components/Section';
 import { SectionTitle } from '../../../components/SectionTitle';
 import { Button } from '../../../components/Buttons';
 import { Markdown } from '../../../components/Markdown';
+import { Page } from '../../../components/Page';
 
 const Rutas = ({ content }) => {
   if (content.length >= 1) {
     return (
-      <>
-        <FullwidePhoto coverURL={content[0].coverURL} />
+      <Page>
+        <FullwidePhoto
+          coverURL={content[0].coverURL}
+          setPhotoFilter={content[0].setPhotoFilter}
+        />
         <QuickNav section='Padres' />
         <Section>
           <SectionTitle title={content[0].title} />
@@ -21,17 +25,17 @@ const Rutas = ({ content }) => {
             href={content[0].externalSiteURL}
           />
         </Section>
-      </>
+      </Page>
     );
   } else {
     return (
-      <>
+      <Page>
         <FullwidePhoto />
         <QuickNav section='Padres' />
         <Section>
           <SectionTitle title='Rutas' />
         </Section>
-      </>
+      </Page>
     );
   }
 };

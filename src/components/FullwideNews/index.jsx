@@ -10,8 +10,12 @@ import {
 const FullwideNews = ({ news }) => {
   if (news.length >= 1) {
     return (
-      <Link to='/'>
-        <FullwidePhoto coverURL={news[0].coverURL}>
+      <Link to={`/articulo/${news[0].id}`}>
+        <FullwidePhoto
+          coverURL={news[0].coverURL}
+          setPhotoFilter={news[0].setPhotoFilter}
+          setContain={news[0].setContain}
+        >
           <StyledFullwideNewsData>
             <StyledFullwideNewsTitle>{news[0].title}</StyledFullwideNewsTitle>
             <StyledFullwideNewsCategory>

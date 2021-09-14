@@ -21,6 +21,10 @@ const GlobalStyles = createGlobalStyle`
   html {
     box-sizing: border-box;
     font-size: 10px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: 11px;
+    }
   }
 
   * {
@@ -46,8 +50,10 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    padding-top: 5.5rem;
+    padding-top: 6rem;
+    background-color: var(--n10);
     -webkit-font-smoothing: antialiased;
+
   }
 `;
 

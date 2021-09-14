@@ -5,12 +5,16 @@ import { QuickNav } from '../../../components/QuickNav';
 import { Section } from '../../../components/Section';
 import { SectionTitle } from '../../../components/SectionTitle';
 import { Markdown } from '../../../components/Markdown';
+import { Page } from '../../../components/Page';
 
 const CampusVirtual = ({ content }) => {
   if (content.length >= 1) {
     return (
-      <>
-        <FullwidePhoto coverURL={content[0].coverURL} />
+      <Page>
+        <FullwidePhoto
+          coverURL={content[0].coverURL}
+          setPhotoFilter={content[0].setPhotoFilter}
+        />
         <QuickNav section='Estudiantes' />
         <Section>
           <SectionTitle title={content[0].title} />
@@ -21,17 +25,17 @@ const CampusVirtual = ({ content }) => {
             href={content[0].externalSiteURL}
           />
         </Section>
-      </>
+      </Page>
     );
   } else {
     return (
-      <>
+      <Page>
         <FullwidePhoto />
         <QuickNav section='Estudiantes' />
         <Section>
           <SectionTitle title='Campus Virtual' />
         </Section>
-      </>
+      </Page>
     );
   }
 };

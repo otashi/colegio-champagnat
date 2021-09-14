@@ -3,6 +3,8 @@ import { FullwideNews } from '../../components/FullwideNews';
 import { SectionTitle } from '../../components/SectionTitle';
 import { Carousel } from '../../components/Carousel';
 import { PartnerCard } from '../../components/PartnerCard';
+import { SectionCards } from '../../components/SectionCards';
+import { CardNews } from '../../components/CardNews';
 
 import {
   StyledLastNewsSection,
@@ -23,7 +25,21 @@ const Home = ({
       <FullwideNews news={titular} />
       <StyledLastNewsSection>
         <SectionTitle title='Últimas noticias' />
-        <Carousel news={news} />
+        {window.innerWidth <= 1024 ? (
+          <Carousel news={news} />
+        ) : (
+          <>
+            {news.length >= 1 && (
+              <>
+                <SectionCards>
+                  {news.map((article) => (
+                    <CardNews {...article} key={article.id} />
+                  ))}
+                </SectionCards>
+              </>
+            )}
+          </>
+        )}
       </StyledLastNewsSection>
       <StyledPartnerSection>
         <StyledPartnerSectionTitle>Alianzas</StyledPartnerSectionTitle>

@@ -9,16 +9,16 @@ const StyledCardPhotoContainer = styled.div`
   box-shadow: 0 0.3rem 0.5rem 0 var(--n50a);
 
   @media screen and (min-width: 1024px) {
-    width: 20rem;
-    height: 20rem;
+    width: 16rem;
+    height: 16rem;
   }
 `;
 
 const StyledCardPhoto = styled.div`
   background-image: url(${(props) => props.src});
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: ${({ contain }) => (contain ? 'contain' : 'cover')};
   width: inherit;
   height: inherit;
 `;

@@ -1,5 +1,6 @@
 import React from 'react';
 import { CardPhoto } from '../CardPhoto';
+import { Link } from '../Link';
 import {
   StyledCardNewsContainer,
   StyledCardNewsData,
@@ -10,7 +11,16 @@ import {
   StyledCardNewsPublishedTime,
 } from './style';
 
-const CardNews = ({ title, category, coverURL, content = '', time }) => {
+const CardNews = ({
+  title,
+  category,
+  coverURL,
+  content = '',
+  time,
+  setPhotoFilter,
+  setContain,
+  id,
+}) => {
   const textToRender = () => {
     const textArray = content.split(' ');
     if (textArray.length <= 25) {
@@ -21,19 +31,25 @@ const CardNews = ({ title, category, coverURL, content = '', time }) => {
   };
 
   return (
-    <StyledCardNewsContainer>
-      <CardPhoto coverURL={coverURL} />
-      <StyledCardNewsData>
-        <StyledCardNewsContent>
-          <StyledCardNewsCategory>{category.category}</StyledCardNewsCategory>
-          <StyledCardNewsTitle>{title}</StyledCardNewsTitle>
-          <StyledCardNewsText>{textToRender()}</StyledCardNewsText>
-        </StyledCardNewsContent>
-        <StyledCardNewsPublishedTime>
-          Publicado hace {time}
-        </StyledCardNewsPublishedTime>
-      </StyledCardNewsData>
-    </StyledCardNewsContainer>
+    <Link to={`/articulo/${id}`}>
+      <StyledCardNewsContainer>
+        <CardPhoto
+          coverURL={coverURL}
+          setPhotoFilter={setPhotoFilter}
+          setContain={setContain}
+        />
+        <StyledCardNewsData>
+          <StyledCardNewsContent>
+            <StyledCardNewsCategory>{category.category}</StyledCardNewsCategory>
+            <StyledCardNewsTitle>{title}</StyledCardNewsTitle>
+            <StyledCardNewsText>{textToRender()}</StyledCardNewsText>
+          </StyledCardNewsContent>
+          <StyledCardNewsPublishedTime>
+            Publicado hace {time}
+          </StyledCardNewsPublishedTime>
+        </StyledCardNewsData>
+      </StyledCardNewsContainer>
+    </Link>
   );
 };
 
