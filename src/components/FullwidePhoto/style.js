@@ -13,6 +13,7 @@ const StyledFullwidePhotoContainer = styled.div`
   @media screen and (min-width: 1026px) {
     margin: 3.2rem auto 0;
     border-radius: 1.6rem;
+    box-shadow: 0 0.3rem 0.5rem 0 var(--n50a);
   }
 `;
 
