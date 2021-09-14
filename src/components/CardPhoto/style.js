@@ -16,9 +16,9 @@ const StyledCardPhotoContainer = styled.div`
 
 const StyledCardPhoto = styled.div`
   background-image: url(${(props) => props.src});
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: ${({ contain }) => (contain ? 'contain' : 'cover')};
   width: inherit;
   height: inherit;
 `;

@@ -14,6 +14,7 @@ const FullwideNews = ({ news }) => {
         <FullwidePhoto
           coverURL={news[0].coverURL}
           setPhotoFilter={news[0].setPhotoFilter}
+          setContain={news[0].setContain}
         >
           <StyledFullwideNewsData>
             <StyledFullwideNewsTitle>{news[0].title}</StyledFullwideNewsTitle>

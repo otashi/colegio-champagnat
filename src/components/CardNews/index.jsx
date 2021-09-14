@@ -18,6 +18,7 @@ const CardNews = ({
   content = '',
   time,
   setPhotoFilter,
+  setContain,
   id,
 }) => {
   const textToRender = () => {
@@ -32,7 +33,11 @@ const CardNews = ({
   return (
     <Link to={`/articulo/${id}`}>
       <StyledCardNewsContainer>
-        <CardPhoto coverURL={coverURL} setPhotoFilter={setPhotoFilter} />
+        <CardPhoto
+          coverURL={coverURL}
+          setPhotoFilter={setPhotoFilter}
+          setContain={setContain}
+        />
         <StyledCardNewsData>
           <StyledCardNewsContent>
             <StyledCardNewsCategory>{category.category}</StyledCardNewsCategory>

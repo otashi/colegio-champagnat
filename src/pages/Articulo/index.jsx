@@ -11,6 +11,7 @@ const Articulo = ({ content }) => {
         <FullwidePhoto
           coverURL={content.coverURL}
           setPhotoFilter={content.setPhotoFilter}
+          setContain={content.setContain}
         />
         <Section>
           <ArticleTitle
