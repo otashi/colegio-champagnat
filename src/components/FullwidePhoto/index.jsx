@@ -2,10 +2,10 @@ import React from 'react';
 import { PhotoFilter } from '../PhotoFilter';
 import { StyledFullwidePhotoContainer, StyledFullwidePhoto } from './style';
 
-const FullwidePhoto = ({ coverURL, children }) => {
+const FullwidePhoto = ({ coverURL, setPhotoFilter, children }) => {
   return (
     <StyledFullwidePhotoContainer>
-      <PhotoFilter />
+      {setPhotoFilter && <PhotoFilter />} 
       <StyledFullwidePhoto src={coverURL} />
       {children}
     </StyledFullwidePhotoContainer>
