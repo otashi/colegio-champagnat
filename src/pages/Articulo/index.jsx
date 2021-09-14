@@ -8,7 +8,10 @@ const Articulo = ({ content }) => {
   if (Object.keys(content).length >= 1) {
     return (
       <>
-        <FullwidePhoto coverURL={content.coverURL} />
+        <FullwidePhoto
+          coverURL={content.coverURL}
+          setPhotoFilter={content[0].setPhotoFilter}
+        />
         <Section>
           <ArticleTitle
             title={content.title}

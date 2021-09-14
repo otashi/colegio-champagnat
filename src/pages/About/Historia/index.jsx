@@ -10,7 +10,10 @@ const Historia = ({ content = [] }) => {
   if (content.length >= 1) {
     return (
       <Page>
-        <FullwidePhoto coverURL={content[0].coverURL} />
+        <FullwidePhoto
+          coverURL={content[0].coverURL}
+          setPhotoFilter={content[0].setPhotoFilter}
+        />
         <QuickNav section='Quienes somos' />
         <Section>
           <SectionTitle title={content[0].title} />

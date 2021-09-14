@@ -9,7 +9,10 @@ const Asofamilia = ({ content }) => {
   if (content.length >= 1) {
     return (
       <>
-        <FullwidePhoto coverURL={content[0].coverURL} />
+        <FullwidePhoto
+          coverURL={content[0].coverURL}
+          setPhotoFilter={content[0].setPhotoFilter}
+        />
         <Section>
           <SectionTitle title={content[0].title} />
           <Markdown linkTarget='_blank'>{content[0].content}</Markdown>

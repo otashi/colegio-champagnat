@@ -11,7 +11,10 @@ const CampusVirtual = ({ content }) => {
   if (content.length >= 1) {
     return (
       <Page>
-        <FullwidePhoto coverURL={content[0].coverURL} />
+        <FullwidePhoto
+          coverURL={content[0].coverURL}
+          setPhotoFilter={content[0].setPhotoFilter}
+        />
         <QuickNav section='Estudiantes' />
         <Section>
           <SectionTitle title={content[0].title} />
