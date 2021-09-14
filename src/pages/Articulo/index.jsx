@@ -17,6 +17,7 @@ const Articulo = ({ content }) => {
           <ArticleTitle
             title={content.title}
             category={content.category.category}
+            published_at={content.published_at}
           />
           <Markdown>{content.content}</Markdown>
         </Section>

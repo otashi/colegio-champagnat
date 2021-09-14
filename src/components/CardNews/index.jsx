@@ -10,26 +10,19 @@ import {
   StyledCardNewsText,
   StyledCardNewsPublishedTime,
 } from './style';
+import { publishedAgo } from '../../utils/publishedAgo';
+import { textToRenderInCard } from '../../utils/textToRenderInCard';
 
 const CardNews = ({
   title,
   category,
   coverURL,
   content = '',
-  time,
+  published_at,
   setPhotoFilter,
   setContain,
   id,
 }) => {
-  const textToRender = () => {
-    const textArray = content.split(' ');
-    if (textArray.length <= 25) {
-      return content;
-    } else {
-      return `${textArray.splice(0, 25).join(' ')}...`;
-    }
-  };
-
   return (
     <Link to={`/articulo/${id}`}>
       <StyledCardNewsContainer>
@@ -42,10 +35,12 @@ const CardNews = ({
           <StyledCardNewsContent>
             <StyledCardNewsCategory>{category.category}</StyledCardNewsCategory>
             <StyledCardNewsTitle>{title}</StyledCardNewsTitle>
-            <StyledCardNewsText>{textToRender()}</StyledCardNewsText>
+            <StyledCardNewsText>
+              {textToRenderInCard(content)}
+            </StyledCardNewsText>
           </StyledCardNewsContent>
           <StyledCardNewsPublishedTime>
-            Publicado hace {time}
+            Publicado el {publishedAgo(published_at)}
           </StyledCardNewsPublishedTime>
         </StyledCardNewsData>
       </StyledCardNewsContainer>
