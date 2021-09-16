@@ -32,19 +32,21 @@ const QuickNav = ({ section }) => {
       </StyledQuickNavHeader>
       {menu && (
         <StyledQuickNavList>
-          {subsections.map((subsection) => (
-            <>
-              {section !== 'Portales' ? (
+          {subsections.map((subsection) => {
+            if (section !== 'Portales') {
+              return (
                 <Link to={routes[subsection]} key={subsection}>
                   <StyledQuickNavLinks>{subsection}</StyledQuickNavLinks>
                 </Link>
-              ) : (
+              );
+            } else {
+              return (
                 <Anchor href={routes[subsection]} key={subsection}>
                   <StyledQuickNavLinks>{subsection}</StyledQuickNavLinks>
                 </Anchor>
-              )}
-            </>
-          ))}
+              );
+            }
+          })}
         </StyledQuickNavList>
       )}
     </StyledQuickNav>
