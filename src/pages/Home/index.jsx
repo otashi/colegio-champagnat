@@ -5,6 +5,7 @@ import { Carousel } from '../../components/Carousel';
 import { PartnerCard } from '../../components/PartnerCard';
 import { SectionCards } from '../../components/SectionCards';
 import { CardNews } from '../../components/CardNews';
+import { Loading } from '../../components/Loading';
 
 import {
   StyledLastNewsSection,
@@ -19,54 +20,59 @@ const Home = ({
   sponsors = [],
   allies = [],
   networks = [],
+  loading,
 }) => {
-  return (
-    <>
-      <FullwideNews news={titular} />
-      <StyledLastNewsSection>
-        <SectionTitle title='Últimas noticias' />
-        {window.innerWidth <= 1024 ? (
-          <Carousel news={news} />
-        ) : (
-          <>
-            {news.length >= 1 && (
-              <>
-                <SectionCards>
-                  {news.map((article) => (
-                    <CardNews {...article} key={article.id} />
-                  ))}
-                </SectionCards>
-              </>
-            )}
-          </>
-        )}
-      </StyledLastNewsSection>
-      <StyledPartnerSection>
-        <StyledPartnerSectionTitle>Alianzas</StyledPartnerSectionTitle>
-        <StyledPartnersContainer>
-          {allies.map((ally) => (
-            <PartnerCard {...ally} key={ally.id} />
-          ))}
-        </StyledPartnersContainer>
-      </StyledPartnerSection>
-      <StyledPartnerSection>
-        <StyledPartnerSectionTitle>Sponsors</StyledPartnerSectionTitle>
-        <StyledPartnersContainer>
-          {sponsors.map((sponsor) => (
-            <PartnerCard {...sponsor} key={sponsor.id} />
-          ))}
-        </StyledPartnersContainer>
-      </StyledPartnerSection>
-      <StyledPartnerSection>
-        <StyledPartnerSectionTitle>Redes</StyledPartnerSectionTitle>
-        <StyledPartnersContainer>
-          {networks.map((network) => (
-            <PartnerCard {...network} key={network.id} />
-          ))}
-        </StyledPartnersContainer>
-      </StyledPartnerSection>
-    </>
-  );
+  if (loading) {
+    return <Loading />;
+  } else {
+    return (
+      <>
+        <FullwideNews news={titular} />
+        <StyledLastNewsSection>
+          <SectionTitle title='Últimas noticias' />
+          {window.innerWidth <= 1024 ? (
+            <Carousel news={news} />
+          ) : (
+            <>
+              {news.length >= 1 && (
+                <>
+                  <SectionCards>
+                    {news.map((article) => (
+                      <CardNews {...article} key={article.id} />
+                    ))}
+                  </SectionCards>
+                </>
+              )}
+            </>
+          )}
+        </StyledLastNewsSection>
+        <StyledPartnerSection>
+          <StyledPartnerSectionTitle>Alianzas</StyledPartnerSectionTitle>
+          <StyledPartnersContainer>
+            {allies.map((ally) => (
+              <PartnerCard {...ally} key={ally.id} />
+            ))}
+          </StyledPartnersContainer>
+        </StyledPartnerSection>
+        <StyledPartnerSection>
+          <StyledPartnerSectionTitle>Sponsors</StyledPartnerSectionTitle>
+          <StyledPartnersContainer>
+            {sponsors.map((sponsor) => (
+              <PartnerCard {...sponsor} key={sponsor.id} />
+            ))}
+          </StyledPartnersContainer>
+        </StyledPartnerSection>
+        <StyledPartnerSection>
+          <StyledPartnerSectionTitle>Redes</StyledPartnerSectionTitle>
+          <StyledPartnersContainer>
+            {networks.map((network) => (
+              <PartnerCard {...network} key={network.id} />
+            ))}
+          </StyledPartnersContainer>
+        </StyledPartnerSection>
+      </>
+    );
+  }
 };
 
 export { Home };
